@@ -12,8 +12,7 @@
 		  <font color="#666666"><img src="../img/spacer.gif" alt="sapcer"><img src="../img/spacer.gif" alt="sapcer"><img src="../img/spacer.gif" alt="sapcer"><img src="../img/spacer.gif" alt="sapcer">&copy; 
 		  2006 Davis &amp; Davis Gourmet Foods </font><br />
             <br />
-            <img src="../img/spacer.gif" alt="sapcer"><img src="../img/spacer.gif" alt="sapcer"><img src="../img/spacer.gif" alt="sapcer"><img src="../img/spacer.gif" alt="sapcer"><a href="http://www.pmidigital.com" target="_blank"><font color="#999999" size="1"><u>Site
-        designed by PMI</u></font></a></span></p>
+            
       <p>&nbsp;</p>
     </div></td>
     <td width="50%" valign="top"><!-- BEGIN: Constant Contact HTML for OptIn Tag  -->
