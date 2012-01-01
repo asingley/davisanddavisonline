@@ -11,7 +11,7 @@ setcookie("no_splash", "1", $expire); // This makes the cookie. It goes in this 
 
 <div id="intro-anim">
 <center>
-<iframe src="intro-animation.php" width="1000" height="300"
+<iframe src="intro-animation.php" width="800" height="300"
              scrolling="no" frameborder="0">
 TEXT FOR NON-COMPATIBLE BROWSERS HERE</iframe>
 </center>
