@@ -7,6 +7,7 @@ setcookie("no_splash", "1", $expire); // This makes the cookie. It goes in this 
 // Do splash page from here down....
 ?>
 <html>
+<link rel="stylesheet" href="intro-css.css" type="text/css">
 <div id="intro-anim">
 <head>
 <meta charset="utf-8">

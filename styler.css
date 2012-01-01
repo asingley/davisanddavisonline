@@ -291,10 +291,6 @@ color:#666666;
 #basket{
 	margin-top:3px;float:left;padding:0pt 0pt 0pt 60pt;
 }
-#intro-anim {
-	margin-right: auto;
-	margin-left: auto;
-}
 
 img {
 	border: solid 0px #000000;
@@ -305,21 +301,11 @@ a{
 	color:#702080;
 }
 a:link {
-		color: blue;
-		text-decoration:none;
-	}
-
-	a:visited {
-		color: purple;
-		text-decoration:none;
-	}
-
-	a:active {
-		background-color: yellow;
-		text-decoration:none;
-	}
-
-	a:hover {
-		color:red;
-		text-decoration:none;
-	}
+}
+a:hover {
+	font-weight:bold;
+}
+a:active {
+}
+a:visited {
+}
