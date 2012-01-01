@@ -1,0 +1,9 @@
+AuthUserFile /home/davisanddavisonline/shopsite-modules.passwd
+AuthGroupFile /dev/null
+AuthName ShopSiteUser
+AuthType Basic
+
+<Limit GET POST PUT>
+require valid-user
+</Limit>
+php_value include_path ".:..:/usr/local/lib/php"
