@@ -6,7 +6,7 @@ margin: 0px 20px 0px 20px;
 #intro-anim {
 width: 700px;
 height: 400px;
-margin: 0px auto -1px auto;
+margin: auto auto auto auto;
 } 
 
 a:link {

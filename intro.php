@@ -23,7 +23,7 @@ swiffyobject = {"tags":[{"label":"start","type":15},{"type":9,"actions":[{"type"
 <script>stage.start();</script>
 
 </body>
-</div>
-<a href="index.php">Enter Site</a> 
 
+<a href="index.php">Enter Site</a> 
+</div>
 </html>
