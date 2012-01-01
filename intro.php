@@ -8,7 +8,7 @@ setcookie("no_splash", "1", $expire); // This makes the cookie. It goes in this 
 ?>
 <html>
 <link rel="stylesheet" href="intro-css.css" type="text/css">
-<div id="intro-anim">
+
 <head>
 <meta charset="utf-8">
 <title>Davis &amp; Davis</title>
@@ -18,12 +18,12 @@ swiffyobject = {"tags":[{"label":"start","type":15},{"type":9,"actions":[{"type"
 </script>
 </head>
 <body>
-
+<div id="intro-anim">
 <script>var stage = new swiffy.Stage(document.body, swiffyobject);</script>
 <script>stage.start();</script>
-
+</div>
 </body>
 
 <a href="index.php">Enter Site</a> 
-</div>
+
 </html>
