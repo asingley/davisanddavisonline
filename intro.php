@@ -7,7 +7,7 @@ setcookie("no_splash", "1", $expire); // This makes the cookie. It goes in this 
 // Do splash page from here down....
 ?>
 <html>
-
+<div id="intro-anim">
 <head>
 <meta charset="utf-8">
 <title>Swiffy output</title>
@@ -22,6 +22,7 @@ swiffyobject = {"tags":[{"label":"start","type":15},{"type":9,"actions":[{"type"
 <script>stage.start();</script>
 
 </body>
+</div>
 <a href="index.php">Enter Site</a> 
 
 </html>
