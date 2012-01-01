@@ -1,5 +1,12 @@
 <!doctype html>
 <html>
+<?php
+
+$expire = time() + 60*60*24; // This means, expire in 1 day - 60 seconds * 60 minutes * 24 hours
+setcookie("no_splash", "1", $expire); // This makes the cookie. It goes in this order: setcookie(cookie_name, cookie_value, expiry_time)
+
+// Do splash page from here down....
+?>
 <head>
 <meta charset="utf-8">
 <title>Swiffy output</title>
