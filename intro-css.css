@@ -9,6 +9,11 @@ height: 400px;
 margin: auto auto auto auto;
 } 
 
+#enter {
+	margin-right: auto;
+	margin-left: auto;
+}
+
 a:link {
 		color: purple;
 		text-decoration:none;
