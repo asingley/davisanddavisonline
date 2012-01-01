@@ -1,8 +1,13 @@
-#intro-anim {
-	align: center;
-	margin: 0 auto;
-	
+
+body {
+margin: 0px 20px 0px 20px;
 }
+
+#intro-anim {
+width: 700px;
+height: 400px;
+margin: 0px auto -1px auto;
+} 
 
 a:link {
 		color: blue;
