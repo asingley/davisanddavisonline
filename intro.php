@@ -18,7 +18,7 @@ TEXT FOR NON-COMPATIBLE BROWSERS HERE</iframe>
 <div id="enter">
 
 <center>
-<a href="index.php"><font size="7">Enter Site</font></a> 
+<a href="index.php"><font size="6">Enter Site</font></a> 
 </center>
 
 </div>
