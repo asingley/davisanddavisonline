@@ -15,6 +15,6 @@ setcookie("no_splash", "1", $expire); // This makes the cookie. It goes in this 
 TEXT FOR NON-COMPATIBLE BROWSERS HERE</iframe>
 </div>
 
-<a href="index.php">Enter Site</a> 
+<a href="index.php" >Enter Site</a> 
 
 </html>
