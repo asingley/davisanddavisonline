@@ -20,9 +20,7 @@
 
 <div style="position:relative;text-align:right;font-weight:bold;padding-top:3px;">
 
-<FORM METHOD="LINK" ACTION="../admin.php">
- <INPUT TYPE="submit" VALUE="Admin Login">
- </FORM>
+<button type="button" onclick="../admin.php">Admin</button>
 <a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a></div>
     
 	<!--MAST-->	<div id="mast">
