@@ -4,6 +4,7 @@ if(!isset($_COOKIE['no_splash'])) {
 	header('Location: intro.php'); // Redirect code
 } else { 
 require("public_html/header.php");
+echo '<a href="admin.php">Admin Panel</a>'';
 require("public_html/footer.php");
 }
 ?>

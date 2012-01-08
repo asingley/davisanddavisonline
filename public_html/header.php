@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
 	<title>Davis &amp; Davis Gourmet Foods</title>
-	<meta name="Author" content="Greg Goodhile;www.DistalDynamic.com;PGH,PA" />
+	<meta name="Author" content="Greg Goodhile Made the graphics for the header and footer, everything else by Andy Singley" />
 	<meta name="Description" content="" />
 	<meta name="Keywords" content="" />
   <link type="text/css" rel="Stylesheet" href="styler.css" />
@@ -16,6 +16,12 @@
 <div name="top" id="top"></div>
 <div id="centerBlock">
 
+
+<div style="position:relative;text-align:left;font-weight:bold;padding-top:3px;">
+<FORM METHOD="LINK" ACTION="../admin.php">
+ <INPUT TYPE="submit" VALUE="Admin Login">
+ </FORM>
+ </div>
 <div style="position:relative;text-align:right;font-weight:bold;padding-top:3px;"><a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a></div>
     
 	<!--MAST-->	<div id="mast">
