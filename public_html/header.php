@@ -19,7 +19,7 @@
 
 
 <div style="position:relative;text-align:right;font-weight:bold;padding-top:3px;">
-<div style="position:relative;text-align:left;font-weight:bold;padding-top:3px;">
+<div style="text-align:left;">
 <FORM METHOD="LINK" ACTION="../admin.php">
  <INPUT TYPE="submit" VALUE="Admin Login">
  </FORM>
