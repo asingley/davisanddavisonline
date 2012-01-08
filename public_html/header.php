@@ -19,11 +19,11 @@
 
 
 <div style="position:relative;text-align:right;font-weight:bold;padding-top:3px;">
-<div style="text-align:left;">
+
 <FORM METHOD="LINK" ACTION="../admin.php">
  <INPUT TYPE="submit" VALUE="Admin Login">
  </FORM>
- </div><a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a></div>
+<a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a></div>
     
 	<!--MAST-->	<div id="mast">
     	<img id="butCatalog" src="images/butCatalog.png" alt="Davis and Davis 2010 Print Catalog Button" onclick="javascript:window.open('dd_catalog.pdf','Davis and Davis 2010 Print Catalog');" />
