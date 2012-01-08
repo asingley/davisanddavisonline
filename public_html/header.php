@@ -17,12 +17,13 @@
 <div id="centerBlock">
 
 
+
+<div style="position:relative;text-align:right;font-weight:bold;padding-top:3px;">
 <div style="position:relative;text-align:left;font-weight:bold;padding-top:3px;">
 <FORM METHOD="LINK" ACTION="../admin.php">
  <INPUT TYPE="submit" VALUE="Admin Login">
  </FORM>
- </div>
-<div style="position:relative;text-align:right;font-weight:bold;padding-top:3px;"><a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a></div>
+ </div><a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a></div>
     
 	<!--MAST-->	<div id="mast">
     	<img id="butCatalog" src="images/butCatalog.png" alt="Davis and Davis 2010 Print Catalog Button" onclick="javascript:window.open('dd_catalog.pdf','Davis and Davis 2010 Print Catalog');" />
