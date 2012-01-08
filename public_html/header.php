@@ -20,7 +20,7 @@
 
 <div style="position:relative;text-align:right;font-weight:bold;padding-top:3px;">
 
-<button type="button" onclick="../admin.php">Admin</button>
+<button type="button" onclick="location.href='../admin.php'">Admin</button>
 <a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a></div>
     
 	<!--MAST-->	<div id="mast">
