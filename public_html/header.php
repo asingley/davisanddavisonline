@@ -10,11 +10,17 @@
 	<script type="text/javascript" src="flash/AC_RunActiveContent.js" language="javascript"></script>
 	<script type="text/javascript" language="javascript" src="scripter.js"></script>
 	
-	
+	<script src="../jquery.js"></script>
+<script  src="../js/jquery.anchorCloud.js"> </script>
 </head>
 <body>
 
-
+<script type="text/javascript">
+$(document).ready(function()
+{
+$(body).anchorCloud();
+});
+</script>
 
 <noscript>You must enable scripting in your browser settings to navigate and order on this site. 
 </noscript>
