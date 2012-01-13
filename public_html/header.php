@@ -13,8 +13,19 @@
 </head>
 <body>
 
+
+
+
+<noscript>You must enable scripting in your browser settings to navigate and order on this site. 
+</noscript>
+<div name="top" id="top"></div>
+<div id="centerBlock">
+
+
+
+<div style="position:relative;text-align:right;font-weight:bold;padding-top:3px;">
 <div id="container">
-  <div id="topnav" class="topnav"> Have an account? <a href="login" class="signin"><span>Sign in</span></a> </div>
+  <div id="topnav" class="topnav"><a href="login" class="signin"><span>Admin</span></a> </div>
   <fieldset id="signin_menu">
     <form method="post" id="signin" action="https://twitter.com/sessions">
       <label for="username">Username or email</label>
@@ -61,17 +72,6 @@ href="#">Forgot your username?</A> </p>
         });
 </script>
 
-
-<noscript>You must enable scripting in your browser settings to navigate and order on this site. 
-</noscript>
-<div name="top" id="top"></div>
-<div id="centerBlock">
-
-
-
-<div style="position:relative;text-align:right;font-weight:bold;padding-top:3px;">
-
-<button type="button" onclick="location.href='../admin.php'">Admin</button>
 <a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a></div>
     
 	<!--MAST-->	<div id="mast">
