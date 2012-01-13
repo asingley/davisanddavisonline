@@ -422,7 +422,7 @@ a.signin.menu-open span {
     margin:0;
 }
 #signin_menu a {
-    color:#6AC;
+    color:#800080;
 }
 #signin_menu label {
     font-weight:normal;
@@ -435,7 +435,7 @@ a.signin.menu-open span {
     margin:5px 0;
 }
 #signin_menu p a {
-    color:#27B!important;
+    color:#800080;
 }
 #signin_submit {
     -moz-border-radius:4px;
