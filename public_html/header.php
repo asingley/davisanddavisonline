@@ -23,7 +23,7 @@
 
 
 
-<div style="position:relative;text-align:right;font-weight:bold;">
+<div style="position:relative;font-weight:bold;">
 <div id="container">
   <div id="topnav" class="topnav"><a href="login" class="signin"><span>Admin</span></a> </div>
   <fieldset id="signin_menu">
