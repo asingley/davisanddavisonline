@@ -40,6 +40,7 @@
       </p>
     </form>
   </fieldset>
+  <a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a>
 </div>
 
 
@@ -66,7 +67,7 @@
         });
 </script>
 
-<a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a></div>
+</div>
     
 	<!--MAST-->	<div id="mast">
     	<img id="butCatalog" src="images/butCatalog.png" alt="Davis and Davis 2010 Print Catalog Button" onclick="javascript:window.open('dd_catalog.pdf','Davis and Davis 2010 Print Catalog');" />
