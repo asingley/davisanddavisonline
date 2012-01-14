@@ -20,7 +20,7 @@
 <form name="ccoptin" action="http://ui.constantcontact.com/roving/d.jsp" target="_blank" method="post">
 <table bgcolor="lightyellow" border="1" bordercolor="#ABC36E" cellpadding="3" cellspacing="0">
 <tr><td align="center"><span class="style1"><font color="#999999" size="1">Join
-        the <b>Davis & Davis Gourmet Foods</b> mailing list </font></span></td>
+        theï¿½<b>Davis & Davis Gourmet Foods</b>ï¿½mailing listï¿½</font></span></td>
 </tr>
 <tr><td align="center"><span class="style1"><font color="#999999" size="1"><b>Email:</b>
         <input type=text name="ea" size=25>
@@ -34,3 +34,46 @@
 <!-- End: Constant Contact HTML for OptIn Tag --></td>
   </tr>
 </table>
+
+<div style="text-align:right;font-weight:bold;">
+<div id="container">
+  <div id="topnav" class="topnav"><a href="login" class="signin"><span>Admin</span></a> </div>
+  <fieldset id="signin_menu">
+    <form method="post" id="signin" action="../admin.php">
+      <label for="username">Username or email</label>
+      <input id="username" name="username" value="" title="username" tabindex="4" type="text">
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input id="password" name="password" value="" title="password" tabindex="5" type="password">
+      </p>
+      <p class="remember">
+        <input id="signin_submit" value="Sign in" tabindex="6" type="submit">
+      </p>
+    </form>
+  </fieldset>
+</div>
+
+
+<script src="../javascripts/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+
+            $(".signin").click(function(e) {
+                e.preventDefault();
+                $("fieldset#signin_menu").toggle();
+                $(".signin").toggleClass("menu-open");
+            });
+
+            $("fieldset#signin_menu").mouseup(function() {
+                return false
+            });
+            $(document).mouseup(function(e) {
+                if($(e.target).parent("a.signin").length==0) {
+                    $(".signin").removeClass("menu-open");
+                    $("fieldset#signin_menu").hide();
+                }
+            });            
+
+        });
+</script>

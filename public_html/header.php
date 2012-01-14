@@ -21,7 +21,7 @@
 <div name="top" id="top"></div>
 <div id="centerBlock">
 
-
+<a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a></div>
 
 <div style="text-align:right;font-weight:bold;">
 <div id="container">
@@ -66,7 +66,7 @@
         });
 </script>
 
-<a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a></div>
+
     
 	<!--MAST-->	<div id="mast">
     	<img id="butCatalog" src="images/butCatalog.png" alt="Davis and Davis 2010 Print Catalog Button" onclick="javascript:window.open('dd_catalog.pdf','Davis and Davis 2010 Print Catalog');" />
