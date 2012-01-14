@@ -25,7 +25,7 @@
 
 <div style="text-align:right;font-weight:bold;">
 <div id="container">
-  <div id="topnav" class="topnav"><a href="login" class="signin"><span>Admin</span></a> </div>
+  <div id="topnav" class="topnav"><a href="login" class="signin"><span>Admin</span></a>   <a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a></div>
   <fieldset id="signin_menu">
     <form method="post" id="signin" action="../admin.php">
       <label for="username">Username or email</label>
@@ -40,7 +40,7 @@
       </p>
     </form>
   </fieldset>
-  <a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a>
+
 </div>
 
 
