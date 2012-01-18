@@ -19,9 +19,10 @@ mysql_select_db("davisanddavis", $con);
 $sql= "SELECT * FROM products";
 $result = mysql_query($sql);
 
-
-echo '<u><pre>id	Product Name		Price	Available</pre></u>';
-echo '<ul class=\ "header\">';
+?>
+<u><pre>id	Product Name		Price	Available</pre></u>
+<ul class=\ "header\">
+<?php 
 while ($row = mysql_fetch_array($result))
 {
 	echo '<ul class=\"col\">';
@@ -33,9 +34,11 @@ while ($row = mysql_fetch_array($result))
 	}
 	else
 		echo '<li>'.'no'.'</li>';
+	echo '</ul>';
 	echo "<br />";
 }
-//echo '</div>';
+echo '</li>';
+echo '</ul>';
 mysql_close($con);
 
 ?>
