@@ -23,7 +23,7 @@ echo '<u><pre>id	Product Name		Price	Available</pre></u>';
 
 while ($row = mysql_fetch_array($result))
 {
-	echo $row['id']. "     ". $row['product_name'];
+	echo $row['id']. '<dd>'. $row['product_name'];
 	echo "<br />";
 }
 
