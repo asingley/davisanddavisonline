@@ -310,6 +310,10 @@ a:active {
 a:visited {
 }
 
+#prod-id{}
+#prod-name{}
+#prod-price{}
+#prod-avail{}
 #container {
     width:100%;
     margin:0 auto;
