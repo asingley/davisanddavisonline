@@ -23,7 +23,13 @@ echo '<u><pre>id	Product Name		Price	Available</pre></u>';
 
 while ($row = mysql_fetch_array($result))
 {
-	echo $row['id']. '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'. $row['product_name'] . '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' . $row['price'];
+	echo $row['id']. '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'. $row['product_name'] . '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' . $row['cost'];
+	echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+	if ($row['active']==1){
+		echo 'yes';
+	}
+	else
+		echo 'no';
 	echo "<br />";
 }
 
