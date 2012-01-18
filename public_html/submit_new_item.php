@@ -9,7 +9,7 @@ mysql_select_db("davisanddavis", $con);
 
 $sql="INSERT INTO products (product_name, description, recipe, cost, active)
 VALUES
-('$_POST[prod_name]','$_POST[prod_desc]','$_POST[prod_recip]','$_POST[prod_price]')";
+('$_POST[prod_name]','$_POST[prod_desc]','$_POST[prod_recip]','$_POST[prod_price]', 1)";
 
 if (!mysql_query($sql,$con))
   {
