@@ -4,7 +4,7 @@
  header("location:index.php");
  }
  
-echo '<link type="text/css" rel="Stylesheet" href="admin-css.css" />';
+echo '';
 echo '<a href="public_html/new_item_form.php">Add a new Item</a>';
 
 $con = mysql_connect("localhost","davis","davis");
@@ -20,8 +20,9 @@ $sql= "SELECT * FROM products";
 $result = mysql_query($sql);
 
 ?>
+<link type="text/css" rel="Stylesheet" href="admin-css.css" />
 <u><pre>id	Product Name		Price	Available</pre></u>
-<ul class=\ "header\">
+<ul class=\"header\">
 <?php 
 while ($row = mysql_fetch_array($result))
 {
