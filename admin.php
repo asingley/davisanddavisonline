@@ -14,22 +14,19 @@ if (!$con)
 
 mysql_select_db("davisanddavis", $con);
 
-function get_list(){
-$sql= mysql_query("SELECT * FROM products where active=1");
-$get_list = array();
-while($kpl = mysql_fetch_assoc($bar)){
-	$get_list[] = $kpl;
-}
-	return $get_list;
-}
+
+$sql= "SELECT * FROM products";
+$result = mysql_query($sql);
+
 
 echo '<u><pre>id	Product Name		Price	Available</pre></u>';
-$result = get_list();
 
-
-foreach($result as $row){
-	echo $row['id'] . "    " . $row['product_name'];
+while ($row = mysql_fetch_array($result))
+{
+	echo $row['id']. "     ". $row['product_name'];
+	echo "<br />";
 }
 
+mysql_close($con);
 
 ?>
