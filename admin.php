@@ -4,7 +4,7 @@
  header("location:index.php");
  }
  
-echo '<link type="text/css" rel="Stylesheet" href="styler.css" />';
+echo '<link type="text/css" rel="Stylesheet" href="admin-css.css" />';
 echo '<a href="public_html/new_item_form.php">Add a new Item</a>';
 
 $con = mysql_connect("localhost","davis","davis");
@@ -21,19 +21,21 @@ $result = mysql_query($sql);
 
 
 echo '<u><pre>id	Product Name		Price	Available</pre></u>';
-echo '<div id="prod-id">ID';
+echo '<ul class=\ "header\">';
 while ($row = mysql_fetch_array($result))
 {
-	echo $row['id']. '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'. $row['product_name'] . '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' . $row['cost'];
-	echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+	echo '<ul class=\"col\">';
+	echo '<li>'.$row['id'].'</li>';
+	echo '<li>'.$row['product_name'].'</li>';
+	echo '<li>'.$row['cost'].'</li>';
 	if ($row['active']==1){
-		echo 'yes';
+		echo '<li>'.'yes'.'</li>';
 	}
 	else
-		echo 'no';
+		echo '<li>'.'no'.'</li>';
 	echo "<br />";
 }
-echo '</div>';
+//echo '</div>';
 mysql_close($con);
 
 ?>
