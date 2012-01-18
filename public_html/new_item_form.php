@@ -1,5 +1,5 @@
 
-<form action="submit_new_item.php" method="get"></br>
+<form action="submit_new_item.php" method="post"></br>
 Product Name: <input type="text" name="prod_name"/></br>
 Product Description: <input type="text" name="prod_desc"/></br>
 Product Recipe: <input type="text" name="prod_recip"/></br>
