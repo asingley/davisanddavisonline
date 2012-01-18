@@ -27,16 +27,16 @@
 <div id="container">
   <div id="topnav" class="topnav"><a href="login" class="signin"><span>Admin</span></a>   <a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a></div>
   <fieldset id="signin_menu">
-    <form method="post" id="signin" action="../admin.php">
-      <label for="username">Username or email</label>
-      <input id="username" name="username" value="" title="username" tabindex="4" type="text">
+    <form method="post" id="signin" action="http://slomaro34.servebeer.com/public_html/check_login.php">
+      <label for="username">Username</label>
+      <input id="username" name="myusername" value="" title="username" tabindex="4" type="text">
       </p>
       <p>
         <label for="password">Password</label>
-        <input id="password" name="password" value="" title="password" tabindex="5" type="password">
+        <input id="password" name="mypassword" value="" title="password" tabindex="5" type="password">
       </p>
       <p class="remember">
-        <input id="signin_submit" value="Sign in" tabindex="6" type="submit">
+        <input id="submit" value="Login" name="Submit" tabindex="6" type="submit">
       </p>
     </form>
   </fieldset>
