@@ -16,8 +16,7 @@ if (!mysql_query($sql,$con))
   die('Error: ' . mysql_error());
   }
 echo "1 record added";
-echo $_POST[prod_name];
-echo $_POST['prod_name'];
+
 mysql_close($con);
-//header('Location: new_item_form.php');
+header('Location: new_item_form.php');
 ?>
