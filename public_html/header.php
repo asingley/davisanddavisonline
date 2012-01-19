@@ -86,8 +86,10 @@
             $sql= "SELECT * FROM products";
             $result = mysql_query($sql);
             
-            
-            echo '<div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="BBB.htm">Beer&nbsp;Bread</a></div>';
+            while ($row = mysql_fetch_array($result))
+            {
+            echo '<div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="BBB.htm">' . $row['product_name'] . '</a></div>';
+            }
             require_once("public_html/db_close.php");
             ?>
             <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="bloodymary2.htm">Bloody&nbsp;Mary&nbsp;Magic</a></div>
