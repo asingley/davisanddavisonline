@@ -54,7 +54,7 @@
   </fieldset>
 
 </div>
-
+</div>
 
 <script src="../javascripts/jquery.js" type="text/javascript"></script>
 <script type="text/javascript">
