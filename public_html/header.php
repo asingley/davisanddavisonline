@@ -83,7 +83,11 @@
         <div id="menuSub1" class="menuItemSub" onmouseout="fMenuOut();" onmouseover="fMenuOver();">
             <?php 
             require_once("public_html/db_connect.php");
-            echo '<div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(14);" href="BBB.htm">Beer&nbsp;Bread</a></div>';
+            $sql= "SELECT * FROM products";
+            $result = mysql_query($sql);
+            
+            
+            echo '<div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="BBB.htm">Beer&nbsp;Bread</a></div>';
             require_once("public_html/db_close.php");
             ?>
             <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="bloodymary2.htm">Bloody&nbsp;Mary&nbsp;Magic</a></div>
