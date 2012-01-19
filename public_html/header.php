@@ -81,7 +81,11 @@
         <div class="menuItem"><a href="homeparty.htm">HOME PARTY</a></div>
         <div class="menuItem"><a href="http://www.davisanddavisonline.com/cgi-davisanddavisonline/sb/order.cgi?storeid=*30b3740e4644d5af8f32bfa5e10499e5a67c8e4df6afa904c38b&function=show">SHOPPING&nbsp;BASKET</a></div>
         <div id="menuSub1" class="menuItemSub" onmouseout="fMenuOut();" onmouseover="fMenuOver();">
-            <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(14);" href="BBB.htm">Beer&nbsp;Bread</a></div>
+            <?php 
+            require_once("public_html/db_connect.php");
+            echo '<div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(14);" href="BBB.htm">Beer&nbsp;Bread</a></div>';
+            require_once("public_html/db_close.php");
+            ?>
             <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="bloodymary2.htm">Bloody&nbsp;Mary&nbsp;Magic</a></div>
             <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(16);" href="soups.htm">Bountiful&nbsp;Bowls</a></div>
             <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(10);" href="cheeseball.htm">Cheeseball&nbsp;Kits</a></div>

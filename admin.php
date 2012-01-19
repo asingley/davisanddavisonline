@@ -7,14 +7,8 @@
 echo '';
 echo '<a href="public_html/new_item_form.php">Add a new Item</a>';
 
-$con = mysql_connect("localhost","davis","davis");
-if (!$con)
-{
-	die('Could not connect: ' . mysql_error());
-}
 
-mysql_select_db("davisanddavis", $con);
-
+require_once("db_connect.php");
 
 $sql= "SELECT * FROM products";
 $result = mysql_query($sql);
@@ -40,6 +34,6 @@ while ($row = mysql_fetch_array($result))
 }
 echo '</li>';
 echo '</ul>';
-mysql_close($con);
+require_once("db_close.php");
 
 ?>
