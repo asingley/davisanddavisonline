@@ -8,7 +8,7 @@ echo '';
 echo '<a href="public_html/new_item_form.php">Add a new Item</a>';
 
 
-require_once("db_connect.php");
+require_once("public_html/db_connect.php");
 
 $sql= "SELECT * FROM products";
 $result = mysql_query($sql);
@@ -34,6 +34,6 @@ while ($row = mysql_fetch_array($result))
 }
 echo '</li>';
 echo '</ul>';
-require_once("db_close.php");
+require_once("public_html/db_close.php");
 
 ?>
