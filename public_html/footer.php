@@ -36,7 +36,7 @@
 </table>
 
 <div style="text-align:right;font-weight:bold;">
-
+<div id="container">
  <a href="login" class="signin"><span>Admin</span></a>  
   <fieldset id="signin_menu">
     <form method="post" id="signin" action="http://slomaro34.servebeer.com/public_html/check_login.php">
@@ -52,7 +52,7 @@
       </p>
     </form>
   </fieldset>
-
+</div>
 
 
 
