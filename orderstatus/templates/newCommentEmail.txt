@@ -1,0 +1,15 @@
+[name]:
+
+This is a comment regarding your order ([orderNumber]) 
+from [storeName].
+
+[comment]
+
+Current status: [status]
+Tracking number: [trackingNumber]
+
+Thanks,
+[storeName]
+
+To check on the status of this order, visit 
+[statusURL]

@@ -1,0 +1,9 @@
+php_value include_path ".:..:/usr/local/lib/php" 
+AuthUserFile /www/davisanddavisonline/orderstatus/admin/.htpasswd
+AuthGroupFile /dev/null
+AuthName OrderStatusUser
+AuthType Basic
+
+<Limit GET POST PUT>
+require valid-user
+</Limit>

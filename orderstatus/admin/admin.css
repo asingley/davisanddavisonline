@@ -1,0 +1,156 @@
+body, div, td, p {
+	font-family: Arial;
+	font-size: 11px;
+}
+body {
+	margin: 0px;
+}
+a, a:visited {
+	text-decoration: none;
+	color: #0000BB;
+}
+a:hover {
+	color: #FF0000;
+	text-decoration: underline;
+}
+hr {
+	border: 0;
+	color: #000000;
+	background-color: #000000;
+	height: 1px;
+	width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h1 {
+	color: #FFFFFF;
+	background-color: #0000BB;
+	font-family: Arial;
+	font-size: 14px;
+	padding: 5px;
+    padding-left: 10px;
+	margin: 0px;
+	
+}	
+.h1Link, .h1Link:visited {
+	font-size: 12px;
+	color: #CCCCCC;
+}
+.h1Link:hover {
+	background-color: #FFFFFF;
+	color: #0000BB;
+}
+h2 {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: Arial;
+	font-size: 16px;
+}
+h3 {
+	color: #FFFFFF;
+	background-color: #999999;
+	font-family: Arial;
+	font-size: 14px;
+	padding: 3px;
+    padding-left: 10px;
+
+}
+h4 {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: Arial;
+	font-size: 14px;
+	color: #0000BB;
+}
+p {
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+.controlBox {
+	margin: 10px;
+	padding: 0px;
+}
+.controlBoxHeader {
+	background-color: #0000BB;
+	color: #FFFFFF;
+	padding: 3px;
+	
+}
+.controlBoxContent {
+	border: 1px solid #333333;
+	background-color: #CCCCCC;
+	border-top: 0px;
+	padding: 5px;
+	width: 50%;
+}
+.message {
+	color: #FF0000;
+}
+.header {
+	padding: 5px;
+	width: 100%;
+	font-size: 12px;
+	
+}
+.footer {
+	text-align: center;
+	font-size: 10px;
+	color: #666666;
+}
+.footer a:hover {
+	color: #0000BB;
+	text-decoration: underline;
+	background-color: white;
+}
+.fancyTable {
+	border: 1px solid #CCCCCC;
+	width: 90%;
+	margin: 10px;
+}
+.fancyTableHeader {
+	background-color: #CCCCCC;
+	border-bottom-width: 1px; 
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.fancyTable tr {
+	font-size: 10px;
+}
+.fancyTableRow2 {
+	background-color: #EEEEEE;
+}
+.fancyTableFooter td {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+}
+.tableLink {
+	font-size: 10px;
+}
+.satoriLogo {
+	font-family: "Footlight MT Light", "Gill Sans";
+	font-size: 14px; 
+}
+.orderComment, .orderCommentHidden {
+	padding: 10px;
+	margin-left: 10px;
+	width: 80%;
+}
+.orderComment {
+	border: solid #CCCCCC 1px;
+	background-color: #FFFFCC ;
+}
+.orderCommentHidden {
+	background-color: #EEEEEE;
+	border: dotted #999999 1px;
+}
+.orderStatusControlBox {
+	border: solid #333333 1px;
+	margin: 5px;
+	background-color: #CCCCCC;
+}
+.error {
+	color: red;
+	font-weight: bold;
+}

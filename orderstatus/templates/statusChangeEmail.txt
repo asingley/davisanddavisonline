@@ -1,0 +1,12 @@
+[name]:
+
+Your order from [storeName] ([orderNumber]) has been updated.
+
+Current status: [status]
+Tracking number: [trackingNumber]
+
+Thanks,
+[storeName]
+
+To check on the status of this order, visit 
+[statusURL]

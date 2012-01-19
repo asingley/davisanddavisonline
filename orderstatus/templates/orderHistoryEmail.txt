@@ -1,0 +1,17 @@
+[name]:
+
+Here are the details about your order from [storeName]:
+
+Order Number: [orderNumber]
+Current status: [status]
+Tracking number: [trackingNumber]
+
+History:
+[statusHistory]
+[comments]
+
+Thanks,
+[storeName]
+
+To check on the status of this order at any time, visit 
+[statusURL]
