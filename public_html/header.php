@@ -88,23 +88,11 @@
             
             while ($row = mysql_fetch_array($result))
             {
-            echo '<div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="BBB.htm">' . $row['product_name'] . '</a></div>';
+            echo '<div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="../index.php?proid="'. $row['id'] .'>' . $row['product_name'] . '</a></div>';
             }
             require_once("public_html/db_close.php");
             ?>
-            <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="bloodymary2.htm">Bloody&nbsp;Mary&nbsp;Magic</a></div>
-            <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(16);" href="soups.htm">Bountiful&nbsp;Bowls</a></div>
-            <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(10);" href="cheeseball.htm">Cheeseball&nbsp;Kits</a></div>
-            <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(1);" href="oils.htm">Cooking&nbsp;&amp;&nbsp;Dipping&nbsp;Oils</a></div>
-            <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(2);" href="dipperMixes.htm">Dipper&nbsp;Mixes</a></div>
-            <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(3);" href="drinks.htm">Frozen&nbsp;Drink&nbsp;Mixes</a></div>
-            <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(12);" href="kstuff.htm">Ken's&nbsp;Stuff</a></div>
-            <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(13);" href="lulu2.htm">LuLu's&nbsp;Ultimate</a></div>
-            <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(5);" href="mustard.htm">Mustards&nbsp;&amp;&nbsp;Relishes</a></div>
-            <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(15);" href="razzle.htm">Razzle&nbsp;Dazzle</a></div>
-            <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(7);" href="salsa.htm">Salsa&nbsp;Magic</a></div>
-            <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(8);" href="sampler.htm">Gourmet&nbsp;Sampler</a></div>
-            <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(17);" href="vanilla.htm">Forever&nbsp;Vanilla</a></div>
+           
             <div id="moneyShot">
                 <img id="imgShot" src="images/blankshot.gif" alt="Davis and Davis Product Highlight" />
             </div>
