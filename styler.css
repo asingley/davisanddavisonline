@@ -22,7 +22,7 @@ body {
 }
 .cart{cursor:pointer;}
 #centerBlock {
-
+	margin: auto auto;
 	width: 760px;
 	background: Transparent;
 }
