@@ -5,7 +5,7 @@
 	<meta name="Author" content="Greg Goodhile Made the graphics for the header and footer, everything else by Andy Singley" />
 	<meta name="Description" content="" />
 	<meta name="Keywords" content="" />
-  <link type="text/css" rel="Stylesheet" href="styler.css" />
+  <link type="text/css" rel="Stylesheet" href="../styler.css" />
 	<script type="text/javascript" language="javascript">AC_FL_RunContent = 0;</script>
 	<script type="text/javascript" src="flash/AC_RunActiveContent.js" language="javascript"></script>
 	<script type="text/javascript" language="javascript" src="scripter.js"></script>
