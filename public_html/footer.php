@@ -11,7 +11,6 @@
             <br />
 		  <font color="#666666"><img src="../img/spacer.gif" alt="sapcer"><img src="../img/spacer.gif" alt="sapcer"><img src="../img/spacer.gif" alt="sapcer"><img src="../img/spacer.gif" alt="sapcer">&copy; 
 		  2012 Davis &amp; Davis Gourmet Foods </font><br />
-            <br />
             
 
 <div id="container">
@@ -45,7 +44,7 @@
             });
 
             $("fieldset#signin_menu").mouseup(function() {
-                return false
+                return false;
             });
             $(document).mouseup(function(e) {
                 if($(e.target).parent("a.signin").length==0) {
