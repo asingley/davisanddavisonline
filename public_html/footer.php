@@ -7,7 +7,7 @@
 					<span class="smallText"><a href="relations.htm">Customer Relations</a></span>
 					<span class="smallText"><a href="mailto:feedback02@davisanddavisonline.com">Feedback</a></span>
 					<span class="smallText"><a href="policies.htm">Policies</a></span>
-					<span class="smallText"><a href="login" class="signin">Admin</a></span>
+					<div id="topnav" class="topnav"><span class="smallText"><a href="login" class="signin">Admin</a></span></div>
 					
 					<fieldset id="signin_menu">
     <form method="post" id="signin" action="http://slomaro34.servebeer.com/public_html/check_login.php">
