@@ -13,6 +13,50 @@
 		  2012 Davis &amp; Davis Gourmet Foods </font><br />
             <br />
             
+           <div style="text-align:right;font-weight:bold;">
+<div id="container">
+  <a href="login" class="signin"><span>Admin</span></a> 
+  <fieldset id="signin_menu">
+    <form method="post" id="signin" action="http://slomaro34.servebeer.com/public_html/check_login.php">
+      <label for="username">Username</label>
+      <input id="username" name="myusername" value="" title="username" tabindex="4" type="text">
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input id="password" name="mypassword" value="" title="password" tabindex="5" type="password">
+      </p>
+      <p class="remember">
+        <input id="submit" value="Login" name="Submit" tabindex="6" type="submit">
+      </p>
+    </form>
+  </fieldset>
+
+
+
+
+<script src="../javascripts/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+
+            $(".signin").click(function(e) {
+                e.preventDefault();
+                $("fieldset#signin_menu").toggle();
+                $(".signin").toggleClass("menu-open");
+            });
+
+            $("fieldset#signin_menu").mouseup(function() {
+                return false
+            });
+            $(document).mouseup(function(e) {
+                if($(e.target).parent("a.signin").length==0) {
+                    $(".signin").removeClass("menu-open");
+                    $("fieldset#signin_menu").hide();
+                }
+            });            
+
+        });
+</script>
+            
       <p>&nbsp;</p>
     </div></td>
     <td width="50%" valign="top"><!-- BEGIN: Constant Contact HTML for OptIn Tag  -->
@@ -35,10 +79,4 @@
   </tr>
 </table>
 
-<script type="text/javascript">
-	function openwindow() {
-	window.open ("./loginpage.php","openwindowname","width=200,height=200,scrollbars=no,resizable=no,toolbar=no,location=no,directories=no,status=no,menu  bar=no,copyhistory=no,");
-	}
-</script>
 
-<input type="button" onclick="openwindow()" value="Open window">
