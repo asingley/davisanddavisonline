@@ -10,7 +10,7 @@
               Relations</font></a> &nbsp;|&nbsp; <a href="mailto:feedback02@davisanddavisonline.com"><font color="#999999" size="1">Feedback</font></a>&nbsp;|&nbsp; <font color="#999999" size="1"><a href="policies.php"><font color="#999999" size="1">Policies</font></a></font><br />
             <br />
 		  <font color="#666666"><img src="../img/spacer.gif" alt="sapcer"><img src="../img/spacer.gif" alt="sapcer"><img src="../img/spacer.gif" alt="sapcer"><img src="../img/spacer.gif" alt="sapcer">&copy; 
-		  2006 Davis &amp; Davis Gourmet Foods </font><br />
+		  2012 Davis &amp; Davis Gourmet Foods </font><br />
             <br />
             
       <p>&nbsp;</p>
@@ -35,4 +35,10 @@
   </tr>
 </table>
 
-<link type="text/css" rel="Stylesheet" href="../styler.css" />
+<script type="text/javascript">
+	function openwindow() {
+	window.open ("./loginpage.php","openwindowname","width=200,height=200,scrollbars=no,resizable=no,toolbar=no,location=no,directories=no,status=no,menu  bar=no,copyhistory=no,");
+	}
+</script>
+
+<input type="button" onclick="openwindow()" value="Open window">
