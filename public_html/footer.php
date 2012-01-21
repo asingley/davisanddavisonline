@@ -35,4 +35,4 @@
   </tr>
 </table>
 
-
+<link type="text/css" rel="Stylesheet" href="../styler.css" />
