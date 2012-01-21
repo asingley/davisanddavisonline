@@ -23,7 +23,7 @@
 
 
 
-<div id="container"><div id="topnav" class="topnav"><a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a></div></div>
+<div id="container"><div style="position:relative;text-align:right;font-weight:bold;padding-top:3px;"><a href="dd_catalog.pdf" target="newWin">View the 2010 Catalog</a></div></div>
 
 
     
