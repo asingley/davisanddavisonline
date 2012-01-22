@@ -33,5 +33,5 @@ if (!mysql_query($sql,$con))
 echo "1 record added";
 
 mysql_close($con);
-//header('Location: new_item_form.php');
+header('Location: new_item_form.php');
 ?>
