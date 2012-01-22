@@ -15,20 +15,18 @@ $result = mysql_query($sql);
 
 ?>
 <link type="text/css" rel="Stylesheet" href="admin-css.css" />
-<u><pre>id	Product Name		Price	Available</pre></u>
+<u><pre>Product Name	Available</pre></u>
 <ul class=\"header\">
 <?php 
 while ($row = mysql_fetch_array($result))
 {
 	echo '<ul class=\"col\">';
-	echo '<li>'.$row['id'].'</li>';
-	echo '<li>'.$row['product_name'].'</li>';
-	echo '<li>'.$row['cost'].'</li>';
+	echo '<li>'.$row['product_name'] . '&nbsp;';
 	if ($row['active']==1){
-		echo '<li>'.'yes'.'</li>';
+		echo 'yes'.'</li>';
 	}
 	else
-		echo '<li>'.'no'.'</li>';
+		echo 'no'.'</li>';
 	echo '</ul>';
 	echo "<br />";
 }
