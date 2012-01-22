@@ -4,7 +4,7 @@ if(!session_is_registered(myusername)){
 	header("location:index.php");
 }
 
-$proid = $_GET["proid"];
+$proid = $_GET["proid"]; 
 
 require_once("public_html/db_connect.php");
 
