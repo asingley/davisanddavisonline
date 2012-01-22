@@ -23,7 +23,7 @@ Product Description: <textarea cols="50" rows="4" name="prod_desc"></textarea><b
 Product Recipe: <input type="text" name="prod_recip"/><br>
 Price Per Unit: <input type="text" name="prod_price"/><br>
 <br>
-Please specify a picture:<br>
-<input type="file" name="datafile" size="40000"><br>
+<input type="hidden" name="MAX_FILE_SIZE" value="100000" />
+Choose a file to upload: <input name="uploadedfile" type="file" /><br />
 <input type="submit" value="Submit"/><a href="../admin.php">Return to Admin Home</a>
 </form>
