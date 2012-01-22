@@ -15,23 +15,32 @@ $result = mysql_query($sql);
 
 ?>
 <link type="text/css" rel="Stylesheet" href="admin-css.css" />
-<u><pre>Product Name	Available</pre></u>
-<ul class=\"header\">
+
 <?php 
-while ($row = mysql_fetch_array($result))
-{
-	echo '<ul class=\"col\">';
-	echo '<li>'.$row['product_name'] . '&nbsp;';
-	if ($row['active']==1){
-		echo 'yes'.'</li>';
+
+$column_count = mysql_num_fields($result)
+or die("display_db_query:" . mysql_error());
+// Here the table attributes from the $table_params variable are added
+print("<TABLE $table_params >\n");
+// optionally print a bold header at top of table
+if($header_bool) {
+	print("<TR>");
+	for($column_num = 0; $column_num < $column_count; $column_num++) {
+		$field_name = mysql_field_name($result, $column_num);
+		print("<TH>$field_name</TH>");
 	}
-	else
-		echo 'no'.'</li>';
-	echo '</ul>';
-	echo "<br />";
+	print("</TR>\n");
 }
-echo '</li>';
-echo '</ul>';
+// print the body of the table
+while($row = mysql_fetch_row($result)) {
+	print("<TR ALIGN=LEFT VALIGN=TOP>");
+	for($column_num = 0; $column_num < $column_count; $column_num++) {
+		print("<TD>$row[$column_num]</TD>\n");
+	}
+	print("</TR>\n");
+}
+print("</TABLE>\n");
+
 require_once("public_html/db_close.php");
 
 ?>
