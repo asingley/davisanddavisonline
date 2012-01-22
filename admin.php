@@ -26,7 +26,7 @@ if(!$header_bool) {
 	print("<TR>");
 	for($column_num = 0; $column_num < $column_count; $column_num++) {
 		$field_name = mysql_field_name($result, $column_num);
-		print("<TH>$field_name</TH>");
+		print("<TH>$field_name&nbsp;|</TH>");
 	}
 	print("</TR>\n");
 }
