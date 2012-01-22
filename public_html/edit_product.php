@@ -1,15 +1,15 @@
 <?php 
 session_start();
 if(!session_is_registered(myusername)){
-	header("location:index.php");
+	header("location:../index.php");
 }
 
 $proid = $_GET["proid"]; 
 
-require_once("public_html/db_connect.php");
+require_once("db_connect.php");
 
 $sql= "SELECT * FROM products where id=$proid";
-$result = mysql_query($sql)or die(mysql_error());
+$result = mysql_query($sql);
 $row = mysql_fetch_array($result);
 
 
@@ -43,6 +43,6 @@ Choose a file to upload: <input name="uploadedfile" type="file" /><br />
 
 
 <?php 
-require_once("public_html/db_close.php");
+require_once("db_close.php");
 
 ?>
