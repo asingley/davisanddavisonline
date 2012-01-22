@@ -17,11 +17,11 @@ $result = mysql_query($sql);
 <link type="text/css" rel="Stylesheet" href="admin-css.css" />
 
 <?php 
-echo 'bro';
+
 $column_count = mysql_num_fields($result)
 or die("display_db_query:" . mysql_error());
 // Here the table attributes from the $table_params variable are added
-print("<TABLE $table_params >\n");
+print("<TABLE $table_params >");
 // optionally print a bold header at top of table
 if(!$header_bool) {
 	print("<TR>");
