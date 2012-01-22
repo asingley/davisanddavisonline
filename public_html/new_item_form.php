@@ -1,7 +1,13 @@
+<head>
+<title>New Product Portal</title>
+</head>
+
+<H1>New Product Portal</H1>
+
 
 <form action="submit_new_item.php" method="post"></br>
 Product Name: <input type="text" name="prod_name"/></br>
-<div align="center"><br>
+
 <input type="radio" name="group1" value="alone" checked> Stand Alone Item<br>
 <input type="radio" name="group1" value="drink"> Drinks<br>
 <input type="radio" name="group1" value="bowl"> Bowls<br>
@@ -12,7 +18,7 @@ Product Name: <input type="text" name="prod_name"/></br>
 <input type="radio" name="group1" value="kstuff"> Ken's Stuff<br>
 <input type="radio" name="group1" value="must" > Mustards and Relishes<br>
 <input type="radio" name="group1" value="salsa"> Salsa Magic
-<hr>
+
 Product Description: <textarea cols="50" rows="4" name="prod_desc"></textarea></br>
 Product Recipe: <input type="text" name="prod_recip"/></br>
 Price Per Unit: <input type="text" name="prod_price"/></br>
