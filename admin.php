@@ -4,7 +4,7 @@
  header("location:index.php");
  }
  
-echo '';
+
 echo '<a href="public_html/new_item_form.php">Add a new Item</a>';
 
 
@@ -17,7 +17,7 @@ $result = mysql_query($sql);
 <link type="text/css" rel="Stylesheet" href="admin-css.css" />
 
 <?php 
-
+echo 'bro';
 $column_count = mysql_num_fields($result)
 or die("display_db_query:" . mysql_error());
 // Here the table attributes from the $table_params variable are added
@@ -39,7 +39,7 @@ while($row = mysql_fetch_row($result)) {
 		print("<TD>$row[$column_num]&nbsp;</TD>\n");
 		
 	}
-	echo '<TD><a href="edit.php?proid='. $row[0] .'">edit</a></TD>\n';
+	echo '<TD><a href="edit_product.php?proid='. $row[0] .'">edit</a></TD>\n';
 	print("</TR>\n");
 
 }
