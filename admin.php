@@ -13,10 +13,7 @@ require_once("public_html/db_connect.php");
 $sql= "SELECT * FROM products";
 $result = mysql_query($sql);
 
-?>
-<link type="text/css" rel="Stylesheet" href="admin-css.css" />
 
-<?php 
 
 $column_count = mysql_num_fields($result)
 or die("display_db_query:" . mysql_error());
