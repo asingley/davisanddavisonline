@@ -39,7 +39,7 @@ while($row = mysql_fetch_row($result)) {
 		print("<TD>$row[$column_num]&nbsp;</TD>\n");
 		
 	}
-	echo '<TD><a href="edit.php?proid='. $row['id'] .'">'edit</a></TD>\n';
+	echo '<TD><a href="edit.php?proid='. $row['id'] .'">edit</a></TD>\n';
 	print("</TR>\n");
 
 }
