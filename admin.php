@@ -36,7 +36,7 @@ while($row = mysql_fetch_row($result)) {
 		print("<TD>$row[$column_num]&nbsp;</TD>\n");
 		
 	}
-	echo '<TD><a href="edit_product.php?proid='. $row[0] .'">edit</a></TD>\n';
+	echo '<TD><a href="edit_product.php?proid='. $row[0] .'">edit</a></TD>';
 	print("</TR>\n");
 
 }
