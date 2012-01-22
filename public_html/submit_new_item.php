@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!session_is_registered(myusername)){
+	header("location:index.php");
+}
 $target_path = "../img/";
 
 /* Add the original filename to our target path.
