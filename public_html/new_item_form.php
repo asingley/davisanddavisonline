@@ -22,5 +22,5 @@ Product Name: <input type="text" name="prod_name"/></br>
 Product Description: <textarea cols="50" rows="4" name="prod_desc"></textarea><br>
 Product Recipe: <input type="text" name="prod_recip"/><br>
 Price Per Unit: <input type="text" name="prod_price"/><br>
-<input type="submit" value="Submit"/>
+<input type="submit" value="Submit"/><a href="../admin.php">Return to Admin Home</a>
 </form>
