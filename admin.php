@@ -37,8 +37,9 @@ while($row = mysql_fetch_row($result)) {
 	for($column_num = 0; $column_num < $column_count; $column_num++) {
 		print("<TD>$row[$column_num]&nbsp;</TD>\n");
 	}
-	//echo "<TD><a href="'edit_product.php'">edit item</a></TD>\n";
+	//echo "<TD></TD>\n";
 	print("</TR>\n");
+	print("<a href="'edit_product.php'">edit item</a>");
 }
 print("</TABLE>\n");
 
