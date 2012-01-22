@@ -14,13 +14,13 @@ $row = mysql_fetch_array($result);
 
 
 ?>
-<H1>Edit: <?php echo $row['product_name'];?></H1>
+<H1>Editing: <?php echo $row['product_name'];?></H1>
 <hr>
 
 <form enctype="multipart/form-data" action="submit_new_item.php" method="post"></br>
 Product Name: <input type="text" name="prod_name" value="<?php echo $row['product_name'];?>"/></br>
 
-<input type="radio" name="group1" value="alone" checked> Stand Alone Item<br>
+<input type="radio" name="group1" value="alone"> Stand Alone Item<br>
 <input type="radio" name="group1" value="drink"> Drinks<br>
 <input type="radio" name="group1" value="bowl"> Bowls<br>
 <input type="radio" name="group1" value="cball"> Cheeseball Kits<br>
@@ -31,12 +31,12 @@ Product Name: <input type="text" name="prod_name" value="<?php echo $row['produc
 <input type="radio" name="group1" value="must" > Mustards and Relishes<br>
 <input type="radio" name="group1" value="salsa"> Salsa Magic<br>
 
-Product Description: <textarea cols="50" rows="4" name="prod_desc"></textarea><br>
-Product Recipe: <input type="text" name="prod_recip"/><br>
-Price Per Unit: <input type="text" name="prod_price"/><br>
+Product Description: <textarea cols="50" rows="4" name="prod_desc" value="<?php echo $row['description'];?>"></textarea><br>
+Product Recipe: <input type="text" name="prod_recip" value="<?php echo $row['recipe'];?>"/><br>
+Price Per Unit: <input type="text" name="prod_price" value="<?php echo $row['cost'];?>"/><br>
 <br>
 <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
-Choose a file to upload: <input name="uploadedfile" type="file" /><br />
+Choose a file to upload: <input name="uploadedfile" type="file" value="<?php echo $row['img_filename'];?>" /><br />
 <input type="submit" value="Update"/><a href="../admin.php">Return to Admin Home</a>
 </form>
 
