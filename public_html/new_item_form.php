@@ -5,7 +5,7 @@
 <H1>New Product Portal</H1>
 <hr>
 
-<form action="submit_new_item.php" method="post"></br>
+<form enctype="multipart/form-data" action="submit_new_item.php" method="post"></br>
 Product Name: <input type="text" name="prod_name"/></br>
 
 <input type="radio" name="group1" value="alone" checked> Stand Alone Item<br>
