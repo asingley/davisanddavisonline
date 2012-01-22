@@ -4,9 +4,11 @@
  header("location:index.php");
  }
  
-
+echo '<H1>Admin Portal</H1>';
+echo '<hr>';
 echo '<a href="public_html/new_item_form.php">Add a new Item</a>';
-
+echo '<br>';
+echo '<H2>Product List</H2>';
 
 require_once("public_html/db_connect.php");
 
