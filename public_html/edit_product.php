@@ -12,7 +12,7 @@ $sql= "SELECT * FROM products where id=$proid";
 $result = mysql_query($sql);
 $row = mysql_fetch_array($result);
 
-
+echo $row['product_name'];
 ?>
 <H1>Edit: <?php $row['product_name']?></H1>
 <hr>
