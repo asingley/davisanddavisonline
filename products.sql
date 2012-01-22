@@ -4,6 +4,7 @@ CREATE TABLE `products` (
 `product_name` varchar(65) NOT NULL default '',
 `description` text NOT NULL default '',
 `recipe`	text,
+`prod_type` varchar(10),
 `cost`	decimal(18,2),
 `active`	int(2),
 PRIMARY KEY (`id`)
