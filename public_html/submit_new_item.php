@@ -8,11 +8,12 @@ $target_path = $target_path . basename( $_FILES['uploadedfile']['name']);
 if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
 	echo "success";
 } else{
+	error_reporting(E_ALL);
 	echo "There was an error uploading the file, please try again!";
 	echo $_FILES['uploadedfile']['tmp_name'] . "target:" . $target_path;
 }
 
-
+error_reporting(E_ALL && ~E_NOTICE);
 $con = mysql_connect("localhost","davis","davis");
 if (!$con)
   {
