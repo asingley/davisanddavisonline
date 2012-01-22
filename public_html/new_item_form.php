@@ -3,7 +3,7 @@
 </head>
 
 <H1>New Product Portal</H1>
-
+<hr>
 
 <form action="submit_new_item.php" method="post"></br>
 Product Name: <input type="text" name="prod_name"/></br>
@@ -17,10 +17,10 @@ Product Name: <input type="text" name="prod_name"/></br>
 <input type="radio" name="group1" value="fdrink"> Frozen Drinks and Mixes<br>
 <input type="radio" name="group1" value="kstuff"> Ken's Stuff<br>
 <input type="radio" name="group1" value="must" > Mustards and Relishes<br>
-<input type="radio" name="group1" value="salsa"> Salsa Magic
+<input type="radio" name="group1" value="salsa"> Salsa Magic<br>
 
-Product Description: <textarea cols="50" rows="4" name="prod_desc"></textarea></br>
-Product Recipe: <input type="text" name="prod_recip"/></br>
-Price Per Unit: <input type="text" name="prod_price"/></br>
+Product Description: <textarea cols="50" rows="4" name="prod_desc"></textarea><br>
+Product Recipe: <input type="text" name="prod_recip"/><br>
+Price Per Unit: <input type="text" name="prod_price"/><br>
 <input type="submit" value="Submit"/>
 </form>
