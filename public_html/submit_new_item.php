@@ -1,5 +1,5 @@
 <?php
-$target_path = "public_images/";
+$target_path = "../img/";
 
 /* Add the original filename to our target path.
  Result is "uploads/filename.extension" */
