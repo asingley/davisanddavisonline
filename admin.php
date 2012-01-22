@@ -21,7 +21,7 @@ $result = mysql_query($sql);
 $column_count = mysql_num_fields($result)
 or die("display_db_query:" . mysql_error());
 // Here the table attributes from the $table_params variable are added
-//print("<TABLE $table_params >");
+print("<TABLE  >");
 // optionally print a bold header at top of table
 if(!$header_bool) {
 	print("<TR>");
