@@ -26,7 +26,7 @@ if(!$header_bool) {
 	print("<TR>");
 	for($column_num = 0; $column_num < $column_count; $column_num++) {
 		$field_name = mysql_field_name($result, $column_num);
-		print("<TH>$field_name&nbsp;</TH>");
+		print("<TH>$field_name&nbsp;|</TH>");
 	}
 	print("</TR>\n");
 }
@@ -35,7 +35,7 @@ while($row = mysql_fetch_row($result)) {
 	print("<TR ALIGN=LEFT VALIGN=TOP>");
 	for($column_num = 0; $column_num < $column_count; $column_num++) {
 
-		print("<TD>$row[$column_num]&nbsp;|</TD>\n");
+		print("<TD>$row[$column_num]&nbsp;</TD>\n");
 		
 	}
 	echo '<TD><a href="public_html/edit_product.php?proid='. $row[0] .'">edit</a></TD>';
