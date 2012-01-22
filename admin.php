@@ -23,7 +23,7 @@ or die("display_db_query:" . mysql_error());
 // Here the table attributes from the $table_params variable are added
 print("<TABLE $table_params >\n");
 // optionally print a bold header at top of table
-if($header_bool) {
+if(!$header_bool) {
 	print("<TR>");
 	for($column_num = 0; $column_num < $column_count; $column_num++) {
 		$field_name = mysql_field_name($result, $column_num);
