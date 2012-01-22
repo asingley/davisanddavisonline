@@ -5,6 +5,7 @@ CREATE TABLE `products` (
 `description` text NOT NULL default '',
 `recipe`	text,
 `prod_type` varchar(10),
+`img_filename` varchar(256),
 `cost`	decimal(18,2),
 `active`	int(2),
 PRIMARY KEY (`id`)

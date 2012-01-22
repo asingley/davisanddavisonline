@@ -22,9 +22,9 @@ if (!$con)
 
 mysql_select_db("davisanddavis", $con);
 
-$sql="INSERT INTO products (product_name, description, recipe, cost, active)
+$sql="INSERT INTO products (product_name, description, recipe, prod_type, img_filename, cost, active)
 VALUES
-('$_POST[prod_name]','$_POST[prod_desc]','$_POST[prod_recip]','$_POST[prod_price]', 1)";
+('$_POST[prod_name]','$_POST[prod_desc]','$_POST[prod_recip]','$_POST[group1]','$target_path','$_POST[prod_price]', 1)";
 
 if (!mysql_query($sql,$con))
   {
