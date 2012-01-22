@@ -12,13 +12,13 @@ $sql= "SELECT * FROM products where id=$proid";
 $result = mysql_query($sql);
 $row = mysql_fetch_array($result);
 
-echo $row['product_name'];
+
 ?>
-<H1>Edit: <?php $row['product_name']?></H1>
+<H1>Edit: <?php echo $row['product_name'];?></H1>
 <hr>
 
 <form enctype="multipart/form-data" action="submit_new_item.php" method="post"></br>
-Product Name: <input type="text" name="prod_name"/></br>
+Product Name: <input type="text" name="prod_name" value="<?php echo $row['product_name'];?>"/></br>
 
 <input type="radio" name="group1" value="alone" checked> Stand Alone Item<br>
 <input type="radio" name="group1" value="drink"> Drinks<br>
@@ -37,7 +37,7 @@ Price Per Unit: <input type="text" name="prod_price"/><br>
 <br>
 <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
 Choose a file to upload: <input name="uploadedfile" type="file" /><br />
-<input type="submit" value="Submit"/><a href="../admin.php">Return to Admin Home</a>
+<input type="submit" value="Update"/><a href="../admin.php">Return to Admin Home</a>
 </form>
 
 
