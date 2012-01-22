@@ -14,6 +14,9 @@ if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
 }
 
 error_reporting(E_ALL && ~E_NOTICE);
+
+$target_path = basename( $_FILES['uploadedfile']['name']); //get filename without directory
+
 $con = mysql_connect("localhost","davis","davis");
 if (!$con)
   {
