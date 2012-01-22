@@ -17,7 +17,7 @@ $row = mysql_fetch_array($result);
 <H1>Editing: <?php echo $row['product_name'];?></H1>
 <hr>
 
-<form enctype="multipart/form-data" action="submit_new_item.php" method="post"></br>
+<form enctype="multipart/form-data" action="update_current_item.php" method="post"></br>
 Product Name: <input type="text" name="prod_name" value="<?php echo $row['product_name'];?>"/></br>
 <?php 
 if($row['prod_type'] == "alone")
@@ -67,6 +67,18 @@ Price Per Unit: <input type="text" name="prod_price" value="<?php echo $row['cos
 <br>
 <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
 Choose a file to upload: <input name="uploadedfile" type="file" value="<?php echo $row['img_filename'];?>" /><br />
+<br>
+<h4>Active:</h4>
+<?php 
+if ($row['active'] == 1){
+	echo '<input type="radio" name="group2" value="1" checked> Active(available for sale)<br>';
+	echo '<input type="radio" name="group2" value="0"> Not Active(out of stock, not for sale, etc...)<br>';}
+else{
+	echo '<input type="radio" name="group2" value="1" > Active(available for sale)<br>';
+	echo '<input type="radio" name="group2" value="0" checked> Not Active(out of stock, not for sale, etc...)<br>';
+}
+?>
+<br>
 <input type="submit" value="Update"/><a href="../admin.php">Return to Admin Home</a>
 </form>
 
