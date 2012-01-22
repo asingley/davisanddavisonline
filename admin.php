@@ -34,12 +34,10 @@ if($header_bool) {
 // print the body of the table
 while($row = mysql_fetch_row($result)) {
 	print("<TR ALIGN=LEFT VALIGN=TOP>");
-	for($column_num = 0; $column_num < ($column_count + 1); $column_num++) {
-		if($column_num < $column_count){
-		print("<TD>$row[$column_num]&nbsp;</TD>\n");}
-		else {
-			print("<TD><a href="'edit.php'"></a>&nbsp;</TD>\n");
-		}
+	for($column_num = 0; $column_num < $column_count; $column_num++) {
+
+		print("<TD>$row[$column_num]&nbsp;</TD>\n");
+		
 	}
 	//echo "<TD></TD>\n";
 	print("</TR>\n");
