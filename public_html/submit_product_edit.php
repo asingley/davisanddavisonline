@@ -39,5 +39,5 @@ if (!mysql_query($sql,$con))
 echo "1 record added";
 
 mysql_close($con);
-header('Location: ../admin.php');
+//header('Location: ../admin.php');
 ?>
