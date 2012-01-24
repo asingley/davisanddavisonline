@@ -17,7 +17,7 @@ $row = mysql_fetch_array($result);
 <H1>Editing: <?php echo $row['product_name'];?></H1>
 <hr>
 
-<form enctype="multipart/form-data" action="update_current_item.php" method="post"></br>
+<form enctype="multipart/form-data" action="submit_product_edit.php?proid=<?php $proid ?>" method="post"></br>
 Product Name: <input type="text" name="prod_name" value="<?php echo $row['product_name'];?>"/></br>
 <?php 
 if($row['prod_type'] == "alone")
