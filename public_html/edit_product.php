@@ -67,7 +67,7 @@ Product Recipe:<br><textarea cols="50" rows="4" name="prod_recip" ><?php echo $r
 Price Per Unit: <input type="text" name="prod_price" value="<?php echo $row['cost'];?>"/><br>
 <br>
 <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
-Choose a file to upload: <input name="uploadedfile" type="file" value="<?php echo $row['img_filename'];?>" /><br />
+Choose a file to upload: <input name="uploadedfile" type="file" /><br />
 <br>
 <h4>Active:</h4>
 <?php 
