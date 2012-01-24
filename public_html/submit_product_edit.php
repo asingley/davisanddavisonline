@@ -4,7 +4,7 @@ if(!session_is_registered(myusername)){
 	header("location:index.php");
 }
 $target_path = "../img/";
-$proid = $_GET['proid'];
+
 /* Add the original filename to our target path.
  Result is "uploads/filename.extension" */
 $target_path = $target_path . basename( $_FILES['uploadedfile']['name']);
@@ -29,7 +29,7 @@ if (!$con)
 
 mysql_select_db("davisanddavis", $con);
 
-$sql="UPDATE products SET product_name='$_POST[prod_name]', description='$_POST[prod_desc]' , recipe='$_POST[prod_recip]' , prod_type='$_POST[group1]' , img_filename='$target_path' , cost='$_POST[prod_price]', active='$_POST[group2]' WHERE id='$proid'";
+$sql="UPDATE products SET product_name='$_POST[prod_name]', description='$_POST[prod_desc]' , recipe='$_POST[prod_recip]' , prod_type='$_POST[group1]' , img_filename='$target_path' , cost='$_POST[prod_price]', active='$_POST[group2]' WHERE id='$_POST[proid]'";
 
 
 if (!mysql_query($sql,$con))

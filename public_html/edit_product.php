@@ -17,9 +17,10 @@ $row = mysql_fetch_array($result);
 <H1>Editing: <?php echo $row['product_name'];?></H1>
 <hr>
 
-<form enctype="multipart/form-data" action="submit_product_edit.php?proid=<?php $row['id'] ?>" method="post"></br>
+<form enctype="multipart/form-data" action="submit_product_edit.php" method="post"></br>
 Product Name: <input type="text" name="prod_name" value="<?php echo $row['product_name'];?>"/></br>
 <?php 
+echo '<input type="hidden" name="proid" value="'.$proid.'">';
 if($row['prod_type'] == "alone")
 	echo '<input type="radio" name="group1" value="alone" checked> Stand Alone Item<br>';
 else 
