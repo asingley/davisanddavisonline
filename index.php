@@ -56,11 +56,11 @@ else {
 	//require_once("product_generator.php");
 
 	require_once("public_html/db_connect.php");
-	$sql= "SELECT * FROM products where id='$proid'";
+	$sql= "SELECT * FROM products where id=$proid";
 	$result = mysql_query($sql);
 	$row = mysql_fetch_array($result);
 	
-	echo $row[product_name];
+	echo $row['product_name'];
 	
 	echo '<div id="sales-container">';
 	echo $row['cost'];
