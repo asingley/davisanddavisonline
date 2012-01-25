@@ -62,7 +62,7 @@ if($row['prod_type'] == "salsa")
 else
 	echo '<input type="radio" name="group1" value="salsa"> Salsa Magic<br>';
 ?>
-Product Description: <br><textarea cols="50" rows="4" name="prod_desc" ><?php echo $row['description'];?></textarea><br>
+Product Description: <br><textarea cols="50" rows="4" name="prod_desc" ><?php echo base64_decode($row['description']);?></textarea><br>
 Product Recipe:<br><textarea cols="50" rows="4" name="prod_recip" ><?php echo $row['recipe'];?></textarea><br>
 Price Per Unit: <input type="text" name="prod_price" value="<?php echo $row['cost'];?>"/><br>
 <br>
