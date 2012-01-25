@@ -53,7 +53,27 @@ if (!isset($_GET["proid"])){
 else {
 	$proid = $_GET["proid"];
 //	require_once("public_html/");
-	require_once("product_generator.php");
+	//require_once("product_generator.php");
+
+	require_once("public_html/db_connect.php");
+	$sql= "SELECT * FROM products where id='$proid'";
+	$result = mysql_query($sql);
+	$row = mysql_fetch_array($result);
+	
+	echo $row[product_name];
+	
+	echo '<div id="sales-container">';
+	echo $row['cost'];
+	echo '</div>';
+	
+	echo '<div id="product-description">';
+	echo $row['description'];
+	echo '</div>';
+	
+	echo $proid;
+	require_once("public_html/db_close.php");
+
+
 }
 require("public_html/footer.php");
 }
