@@ -12,9 +12,10 @@ $sql= "SELECT * FROM products where id=$proid";
 $result = mysql_query($sql);
 $row = mysql_fetch_array($result);
 
-echo $row[product_name];
+
 
 echo '<div id="sales-container">';
+echo '<H3>' . $row['product_name'] . '</H3>';
 echo $row['cost'];
 echo '</div>';
 
