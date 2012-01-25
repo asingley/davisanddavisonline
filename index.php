@@ -52,6 +52,7 @@ if (!isset($_GET["proid"])){
 }
 else {
 	$proid = $_GET["proid"];
+//	require_once("public_html/");
 	require_once("product_generator.php");
 }
 require("public_html/footer.php");

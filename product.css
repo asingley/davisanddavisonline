@@ -7,3 +7,11 @@
     width: auto;
     height : 300px;
     }
+#sales-container{
+margin-right: auto;
+margin-left: auto;
+}
+
+#product-description {
+margin-right: 0px;
+}
