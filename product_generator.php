@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="product.css" />
 <?php 
 require_once("public_html/db_connect.php");
-$sql= "SELECT * FROM products where id=$proid";
+$sql= "SELECT * FROM products where id=1";
 $result = mysql_query($sql);
 $row = mysql_fetch_array($result);
 
