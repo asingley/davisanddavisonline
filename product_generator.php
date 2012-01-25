@@ -20,7 +20,7 @@ echo $row['cost'];
 echo '</div>';
 
 echo '<div id="product-description">';
-echo $row['description'];
+echo base64_decode($row['description']);
 echo '</div>';
 
 echo $proid;
