@@ -16,9 +16,11 @@ $row = mysql_fetch_array($result);
 
 echo '<div id="sales-container">';
 echo '<H3>' . $row['product_name'] . '</H3>';
-echo $row['cost'];
+echo '$' . $row['cost'];
 echo '</div>';
-
+echo '<div class="purpBar">';
+echo '<img src="images/purplefadebar.jpg" alt="Davis And Davis" />';
+echo '</div>';
 echo '<div id="product-description">';
 echo base64_decode($row['description']);
 echo '</div>';
