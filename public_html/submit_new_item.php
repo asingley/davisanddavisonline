@@ -21,6 +21,8 @@ error_reporting(E_ALL && ~E_NOTICE);
 
 $target_path = basename( $_FILES['uploadedfile']['name']); //get filename without directory
 
+$description = base64_encode($_POST[prod_desc]);
+
 $con = mysql_connect("localhost","davis","davis");
 if (!$con)
   {
@@ -31,7 +33,7 @@ mysql_select_db("davisanddavis", $con);
 
 $sql="INSERT INTO products (product_name, description, recipe, prod_type, img_filename, cost, active)
 VALUES
-('$_POST[prod_name]','$_POST[prod_desc]','$_POST[prod_recip]','$_POST[group1]','$target_path','$_POST[prod_price]', 1)";
+('$_POST[prod_name]','$description','$_POST[prod_recip]','$_POST[group1]','$target_path','$_POST[prod_price]', 1)";
 
 if (!mysql_query($sql,$con))
   {
