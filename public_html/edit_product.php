@@ -69,25 +69,22 @@ $description = str_replace("<br />", " ", $description );
 
 
 <script type="text/javascript">
-function saveCurRng() {
-curRng = document.selection.createRange().duplicate();
+function formatText (el,tag) {
+var selectedText=document.selection?document.selection.createRange().text:el.value.substring(el.selectionStart,el.selectionEnd);
+if (selectedText!='') {
+var newText='<'+tag+'>'+selectedText+'</'+tag+'>';
+el.value=el.value.replace(selectedText,newText)
 }
-function surround(btag, etag){
-if (curRng) {
-document.editform.article.focus();
-curRng.text= btag + curRng.text + etag;
-return false;
-}
-}
+} 
 </script>
 </head>
 <body>
-Product Description: <br>
-<textarea rows=5 cols=40 name="prod_desc" onKeyup="saveCurRng()" onMouseup="saveCurRng()"></textarea>
-
-<a href="#" onclick="return surround('<b>', '</b>');">bold</a><br>
-<a href="#" onclick="return surround('<i>', '</i>');">italic</a>
-
+<form name="myForm">
+<textarea name="myTextarea" rows = "12" cols = "50"><?php echo $description;?></textarea><br>
+<input type="button" value="Bold" onclick="formatText (myTextarea,'b');" />
+<input type="button" value="Italic" onclick="formatText (myTextarea,'i');" />
+<input type="button" value="Underline" onclick="formatText (myTextarea,'u');" />
+</form>
 
 
 
