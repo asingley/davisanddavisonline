@@ -18,6 +18,7 @@ text-align: center;
 #product-description {
 margin-right: 0px;
 width: 50%
+float: right;
 }
 
 #product-image {
