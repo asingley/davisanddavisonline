@@ -62,6 +62,9 @@ if($row['prod_type'] == "salsa")
 else
 	echo '<input type="radio" name="group1" value="salsa"> Salsa Magic<br>';
 $description = base64_decode($row['description']);
+$description = str_replace("<br />", " ", $description );
+
+
 ?>
 Product Description: <br><textarea cols="50" rows="4" name="prod_desc" ><?php echo $description;?></textarea><br>
 Product Recipe:<br><textarea cols="50" rows="4" name="prod_recip" ><?php echo $row['recipe'];?></textarea><br>
