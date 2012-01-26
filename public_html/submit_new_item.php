@@ -21,7 +21,7 @@ error_reporting(E_ALL && ~E_NOTICE);
 
 $target_path = basename( $_FILES['uploadedfile']['name']); //get filename without directory
 
-$description = base64_encode($_POST[prod_desc]);
+$description = base64_encode(nl2br(str_replace('  ', ' &nbsp;', htmlspecialchars($_POST[prod_desc]))));
 
 $con = mysql_connect("localhost","davis","davis");
 if (!$con)
