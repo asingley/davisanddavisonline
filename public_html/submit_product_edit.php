@@ -19,7 +19,7 @@ if (basename( $_FILES['uploadedfile']['name']) == ""){
 	
 	mysql_select_db("davisanddavis", $con);
 	
-	$sql="UPDATE products SET product_name='$_POST[prod_name]', description='$_POST[prod_desc]' , recipe='$_POST[prod_recip]' , prod_type='$_POST[group1]' , cost='$_POST[prod_price]', active='$_POST[group2]' WHERE id='$_POST[proid]'";
+	$sql="UPDATE products SET product_name='$_POST[prod_name]', description='$base64_encode($_POST[prod_desc]);' , recipe='$_POST[prod_recip]' , prod_type='$_POST[group1]' , cost='$_POST[prod_price]', active='$_POST[group2]' WHERE id='$_POST[proid]'";
 	
 	
 	if (!mysql_query($sql,$con))
@@ -44,7 +44,7 @@ if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
 error_reporting(E_ALL && ~E_NOTICE);
 
 $target_path = basename( $_FILES['uploadedfile']['name']); //get filename without directory
-
+$description = base64_encode($_POST[prod_desc]);
 $con = mysql_connect("localhost","davis","davis");
 if (!$con)
   {
@@ -52,7 +52,7 @@ if (!$con)
   }
 
 mysql_select_db("davisanddavis", $con);
-$description = base64_encode($_POST[prod_desc]);
+
 $sql="UPDATE products SET product_name='$_POST[prod_name]', description='$description' , recipe='$_POST[prod_recip]' , prod_type='$_POST[group1]' , img_filename='$target_path' , cost='$_POST[prod_price]', active='$_POST[group2]' WHERE id='$_POST[proid]'";
 
 
