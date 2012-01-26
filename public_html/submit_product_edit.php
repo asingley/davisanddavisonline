@@ -8,7 +8,7 @@ $target_path = "../img/";
 /* Add the original filename to our target path.
  Result is "uploads/filename.extension" */
 $target_path = $target_path . basename( $_FILES['uploadedfile']['name']);
-$description = base64_encode(nl2br(str_replace($_POST[prod_desc])));
+$description = base64_encode(nl2br(str_replace('  ', ' &nbsp;', htmlspecialchars($_POST[prod_desc]))));
 if (basename( $_FILES['uploadedfile']['name']) == ""){
 	
 	
