@@ -53,7 +53,12 @@ if (!isset($_GET["proid"])){
 else {
 	$proid = $_GET["proid"];
 //	require_once("public_html/");
-	require_once("product_generator.php");
+	if ($proid='drinks'){
+		require_once("public_html/drinks.php");
+	}
+	else {
+		require_once("product_generator.php");
+	}
 
 
 
