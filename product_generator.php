@@ -24,7 +24,7 @@ echo '</div>';
 echo '<div id="product-image">';
 echo '<img src="img/'. $row['img_filename'] . '"/>';
 echo '</div>';
-echo '<div id="product-description" ">';
+echo '<div id="product-description" style="float: right;">';
 echo base64_decode($row['description']);
 echo '</div>';
 
