@@ -48,8 +48,8 @@ Just choose the 2 or 6 Pack option in the drop-down, click the cart, and then se
 </select>
 </td>
 <td>
-							<img onclick="fAddItem('drink')" class="cart" src="images/cart.gif" alt="Add this selection to your basket." />
-</td>
+							<!-- <img onclick="fAddItem('drink')" class="cart" src="images/cart.gif" alt="Add this selection to your basket." />
+--></td>
 </tr>
 </table>
 </div>
