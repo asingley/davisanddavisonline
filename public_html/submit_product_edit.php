@@ -9,6 +9,7 @@ $target_path = "../img/";
  Result is "uploads/filename.extension" */
 $target_path = $target_path . basename( $_FILES['uploadedfile']['name']);
 $description = base64_encode(nl2br(str_replace('  ', ' &nbsp;', htmlspecialchars($_POST[prod_desc]))));
+$name = base64_encode($_POST[prod_name]);
 if (basename( $_FILES['uploadedfile']['name']) == ""){
 	
 	
@@ -20,7 +21,7 @@ if (basename( $_FILES['uploadedfile']['name']) == ""){
 	
 	mysql_select_db("davisanddavis", $con);
 	
-	$sql="UPDATE products SET product_name='$_POST[prod_name]', description='$description;' , recipe='$_POST[prod_recip]' , prod_type='$_POST[group1]' , cost='$_POST[prod_price]', active='$_POST[group2]' WHERE id='$_POST[proid]'";
+	$sql="UPDATE products SET product_name='$name', description='$description;' , recipe='$_POST[prod_recip]' , prod_type='$_POST[group1]' , cost='$_POST[prod_price]', active='$_POST[group2]' WHERE id='$_POST[proid]'";
 	
 	
 	if (!mysql_query($sql,$con))
@@ -54,7 +55,7 @@ if (!$con)
 
 mysql_select_db("davisanddavis", $con);
 
-$sql="UPDATE products SET product_name='$_POST[prod_name]', description='$description' , recipe='$_POST[prod_recip]' , prod_type='$_POST[group1]' , img_filename='$target_path' , cost='$_POST[prod_price]', active='$_POST[group2]' WHERE id='$_POST[proid]'";
+$sql="UPDATE products SET product_name='$name', description='$description' , recipe='$_POST[prod_recip]' , prod_type='$_POST[group1]' , img_filename='$target_path' , cost='$_POST[prod_price]', active='$_POST[group2]' WHERE id='$_POST[proid]'";
 
 
 if (!mysql_query($sql,$con))
