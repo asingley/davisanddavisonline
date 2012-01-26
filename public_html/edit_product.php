@@ -66,7 +66,32 @@ $description = str_replace("<br />", " ", $description );
 
 
 ?>
-Product Description: <br><textarea cols="50" rows="4" name="prod_desc" ><?php echo $description;?></textarea><br>
+
+
+<script type="text/javascript">
+function saveCurRng() {
+curRng = document.selection.createRange().duplicate();
+}
+function surround(btag, etag){
+if (curRng) {
+document.editform.article.focus();
+curRng.text= btag + curRng.text + etag;
+return false;
+}
+}
+</script>
+</head>
+<body>
+Product Description: <br>
+<textarea rows=5 cols=40 name="prod_desc" onKeyup="saveCurRng()" onMouseup="saveCurRng()"></textarea>
+
+<a href="#" onclick="return surround('<b>', '</b>');">bold</a><br>
+<a href="#" onclick="return surround('<i>', '</i>');">italic</a>
+
+
+
+
+<!-- Product Description: <br><textarea cols="50" rows="4" name="prod_desc" ><?php //echo $description;?></textarea><br>-->
 Product Recipe:<br><textarea cols="50" rows="4" name="prod_recip" ><?php echo $row['recipe'];?></textarea><br>
 Price Per Unit: <input type="text" name="prod_price" value="<?php echo $row['cost'];?>"/><br>
 <br>
