@@ -77,14 +77,13 @@ el.value=el.value.replace(selectedText,newText)
 }
 } 
 </script>
-</head>
-<body>
-<form name="myForm">
+
+
 <textarea name="myTextarea" rows = "12" cols = "50"><?php echo $description;?></textarea><br>
 <input type="button" value="Bold" onclick="formatText (myTextarea,'b');" />
 <input type="button" value="Italic" onclick="formatText (myTextarea,'i');" />
 <input type="button" value="Underline" onclick="formatText (myTextarea,'u');" />
-</form>
+
 
 
 
