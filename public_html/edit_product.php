@@ -18,7 +18,7 @@ $row = mysql_fetch_array($result);
 <hr>
 
 <form enctype="multipart/form-data" action="submit_product_edit.php" method="post"></br>
-Product Name: <input type="text" name="prod_name" value="<?php echo $row['product_name'];?>"/></br>
+Product Name: <input type="text" name="prod_name" value="<?php echo base64_decode($row['product_name']);?>"/></br>
 <?php 
 echo '<input type="hidden" name="proid" value="'.$proid.'">';
 if($row['prod_type'] == "alone")
