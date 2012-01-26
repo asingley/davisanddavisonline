@@ -12,7 +12,7 @@ echo '<H2>Product List</H2>';
 
 require_once("public_html/db_connect.php");
 
-$sql= "SELECT product_name, prod_type, cost, active FROM products";
+$sql= "SELECT id, product_name, prod_type, cost, active FROM products";
 $result = mysql_query($sql);
 
 

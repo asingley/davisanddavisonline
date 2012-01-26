@@ -28,7 +28,6 @@ echo '<div id="product-description" style="float: right;">';
 echo base64_decode($row['description']);
 echo '</div>';
 
-echo $proid;
 mysql_close($con);
 
 ?>
