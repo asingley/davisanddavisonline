@@ -87,7 +87,7 @@ Product Description:<br>
 
 <br>
 
-<!-- Product Description: <br><textarea cols="50" rows="4" name="prod_desc" ><?php //echo $description;?></textarea><br>-->
+
 Product Recipe:<br><textarea cols="50" rows="4" name="prod_recip" ><?php echo $row['recipe'];?></textarea><br>
 Price Per Unit: <input type="text" name="prod_price" value="<?php echo $row['cost'];?>"/><br>
 <br>
