@@ -52,7 +52,7 @@ if (!$con)
   }
 
 mysql_select_db("davisanddavis", $con);
-$description = $_POST[prod_desc];
+$description = base64_encode($_POST[prod_desc]);
 $sql="UPDATE products SET product_name='$_POST[prod_name]', description='$description' , recipe='$_POST[prod_recip]' , prod_type='$_POST[group1]' , img_filename='$target_path' , cost='$_POST[prod_price]', active='$_POST[group2]' WHERE id='$_POST[proid]'";
 
 
