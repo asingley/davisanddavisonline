@@ -21,7 +21,7 @@ echo '</div>';
 echo '<div class="purpBar">';
 echo '<img src="images/purplefadebar.jpg" alt="Davis And Davis" />';
 echo '</div>';
-echo '<div id="product-image">';
+echo '<div id="product-image" style="float: left;">';
 echo '<img src="img/'. $row['img_filename'] . '"/>';
 echo '</div>';
 echo '<div id="product-description" style="float: right;">';
