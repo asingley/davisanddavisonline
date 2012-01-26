@@ -15,7 +15,7 @@ $row = mysql_fetch_array($result);
 
 
 echo '<div id="sales-container">';
-echo '<H3>' . $row['product_name'] . '</H3>';
+echo '<H3>' . base64_decode($row['product_name']) . '</H3>';
 echo '$' . $row['cost'];
 echo '</div>';
 echo '<div class="purpBar">';
