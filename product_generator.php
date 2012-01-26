@@ -25,7 +25,7 @@ echo '<div id="product-image" style="float: left;">';
 echo '<img src="img/'. $row['img_filename'] . '"/>';
 echo '</div>';
 echo '<div id="product-description" style="float: right;">';
-echo '<p>' . base64_decode($row['description']) . '</p>';
+echo base64_decode($row['description']);
 echo '</div>';
 
 mysql_close($con);
