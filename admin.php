@@ -35,9 +35,13 @@ while($row = mysql_fetch_row($result)) {
 	print("<TR ALIGN=LEFT VALIGN=TOP>");
 	for($column_num = 0; $column_num < $column_count; $column_num++) {
 
-		//print("<TD>$row[$column_num]&nbsp;</TD>\n");
-		echo "<TD>$row[$column_num]&nbsp;</TD>\n";
+		if ($column_num ==1){
+		echo "<TD>" . base64_decode($row[$column_num]) . "&nbsp;</TD>\n";}
+		else {
+			echo "<TD>$row[$column_num]&nbsp;</TD>\n";
+		}
 	}
+	
 	echo '<TD><a href="public_html/edit_product.php?proid='. $row[0] .'">edit</a></TD>';
 	print("</TR>\n");
 
