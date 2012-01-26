@@ -19,8 +19,9 @@ Product Name: <input type="text" name="prod_name"/></br>
 <input type="radio" name="group1" value="must" > Mustards and Relishes<br>
 <input type="radio" name="group1" value="salsa"> Salsa Magic<br>
 
-Product Description: <textarea cols="50" rows="4" name="prod_desc"></textarea><br>
-Product Recipe: <input type="text" name="prod_recip"/><br>
+Product Description: <br><textarea cols="50" rows="4" name="prod_desc" ></textarea><br>
+Product Recipe:<br><textarea cols="50" rows="4" name="prod_recip" ></textarea><br>
+
 Price Per Unit: <input type="text" name="prod_price"/><br>
 <br>
 <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
