@@ -22,7 +22,7 @@ echo '<div class="purpBar">';
 echo '<img src="images/purplefadebar.jpg" alt="Davis And Davis" />';
 echo '</div>';
 echo '<div id="product-image">';
-echo '<img src="img/"'. $row['img_filename'] . '/>';
+echo '<img src="img/'. $row['img_filename'] . '"/>';
 echo '</div>';
 echo '<div id="product-description">';
 echo base64_decode($row['description']);
