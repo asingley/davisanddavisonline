@@ -53,11 +53,25 @@ if (!isset($_GET["proid"])){
 else {
 	$proid = $_GET["proid"];
 	$groupid = $_GET["groupid"];
- if ($proid=="drinks"){
-	//if ($groupid == 1){	
- 	require_once("public_html/drinks.php");//}
-}
-	else {
+if ($proid=="drinks"){
+ 	require_once("public_html/drinks.php");
+}elseif ($proid=="kstuff"){
+	require_once("public_html/kstuff.php");
+}elseif ($proid=="salsa"){
+	require_once("public_html/salsa.php");
+}elseif ($proid=="mustard"){
+	require_once("public_html/mustard.php");
+}elseif ($proid=="dippermixes"){
+	require_once("public_html/dippermixes.php");
+}elseif ($proid=="oils"){
+	require_once("public_html/oils.php");
+}elseif ($proid=="soups"){
+	require_once("public_html/soups.php");
+}elseif ($proid=="cheeseball"){
+	require_once("public_html/cheeseball.php");
+}elseif ($proid=="bloodymary"){
+	require_once("public_html/bloodymary.php");
+}else {
 		require_once("product_generator.php");
 	}
 
