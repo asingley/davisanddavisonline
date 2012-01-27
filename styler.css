@@ -73,7 +73,7 @@ body {
 	left:0px;
 	top:14px;
 	z-index:2;
-	background: #ffffff  url('images/menusub.jpg') no-repeat;
+	background: #ffffff  url('images/menusub.jpg');
 	width:220px;
 	height:400px;
 }
