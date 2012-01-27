@@ -54,7 +54,7 @@ else {
 	$proid = $_GET["proid"];
 	$groupid = $_GET["groupid"];
  if ($proid==0){
-	if (groupid == 'drinks'){	
+	if ($groupid == 'drinks'){	
  	require_once("public_html/drinks.php");}
 }
 	else {
