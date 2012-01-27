@@ -74,6 +74,7 @@ body {
 	top:14px;
 	z-index:2;
 	background: #ffffff  url('images/menusub.jpg');
+	background-size: 100%;
 	width:220px;
 	height:100%;
 }
