@@ -52,9 +52,10 @@ if (!isset($_GET["proid"])){
 }
 else {
 	$proid = $_GET["proid"];
-
- if ($proid='drinks'){
-		require_once("public_html/drinks.php");
+	$groupid = $_GET["groupid"];
+ if ($proid==0){
+	if (groupid == 'drinks'){	
+ 	require_once("public_html/drinks.php");}
 }
 	else {
 		require_once("product_generator.php");
