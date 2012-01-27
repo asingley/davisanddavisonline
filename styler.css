@@ -76,6 +76,7 @@ body {
 	background: #ffffff  url('images/menusub.jpg') no-repeat;
 	width:220px;
 	height:100%;
+	min-height: 100%;
 }
 .menuItemSub .menuItem{
 	clear:both;
