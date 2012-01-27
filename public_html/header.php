@@ -48,7 +48,6 @@
         <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(1);" href="../index.php?proid=oils">Cooking&nbsp;&amp;&nbsp;Dipping&nbsp;Oils</a></div>
         <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(16);" href="../index.php?proid=soups">Bountiful&nbsp;Bowls</a></div>
         <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(10);" href="../index.php?proid=cheeseball">Cheeseball&nbsp;Kits</a></div>
-        <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="../index.php?proid=bloodymary">Bloody&nbsp;Mary&nbsp;Magic</a></div>
         
             <?php 
             require_once("public_html/db_connect.php");

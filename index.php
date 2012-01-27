@@ -69,8 +69,6 @@ if ($proid=="drinks"){
 	require_once("public_html/soups.php");
 }elseif ($proid=="cheeseball"){
 	require_once("public_html/cheeseball.php");
-}elseif ($proid=="bloodymary"){
-	require_once("public_html/bloodymary.php");
 }elseif ($proid=="bread"){
 	require_once("public_html/bbb.php");
 }else {

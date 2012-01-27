@@ -1,3 +1,5 @@
+<link type="text/css" rel="Stylesheet" href="admin-css.css" />
+<script type="text/javascript" src="tabber.js"></script>
 <?php
  session_start();
  if(!session_is_registered(myusername)){
@@ -12,6 +14,9 @@ echo '<H2>Product List</H2>';
 
 require_once("public_html/db_connect.php");
 
+echo '<div class="tabber">';
+echo '<div class="tabbertab">';
+echo '<H2>Products</H2>';
 $sql= "SELECT id, product_name, prod_type, cost, active FROM products";
 $result = mysql_query($sql);
 
@@ -47,7 +52,8 @@ while($row = mysql_fetch_row($result)) {
 
 }
 print("</TABLE>\n");
-
+echo '</div>';
+echo '</div>';
 require_once("public_html/db_close.php");
 
 ?>
