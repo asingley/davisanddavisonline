@@ -56,7 +56,7 @@
             
             while ($row = mysql_fetch_array($result))
             {
-            echo '<div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="../index.php?proid='. $row['id'] .'?groupid=alone">' . base64_decode($row['product_name']) . '</a></div>';
+            echo '<div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="../index.php?proid='. $row['id'] .'">' . base64_decode($row['product_name']) . '</a></div>';
             }
             require_once("public_html/db_close.php");
             ?>
