@@ -11,12 +11,13 @@ echo '<hr>';
 echo '<a href="index.php">Back to Home</a>';
 echo '<br>';
 echo '<H2>Product List</H2>';
-echo '<a href="public_html/new_item_form.php">Add a new Item</a>';
+
 require_once("public_html/db_connect.php");
 
 echo '<div class="tabber">';
 echo '<div class="tabbertab">';
 echo '<H2>Products</H2>';
+echo '<a href="public_html/new_item_form.php">Add a new Item</a>';
 $sql= "SELECT id, product_name, prod_type, cost, active FROM products";
 $result = mysql_query($sql);
 
