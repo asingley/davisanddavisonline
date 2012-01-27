@@ -39,6 +39,7 @@
         <div class="menuItem"><a href="homeparty.htm">HOME PARTY</a></div>
         <div class="menuItem"><a href="http://www.davisanddavisonline.com/cgi-davisanddavisonline/sb/order.cgi?storeid=*30b3740e4644d5af8f32bfa5e10499e5a67c8e4df6afa904c38b&function=show">SHOPPING&nbsp;BASKET</a></div>
         <div id="menuSub1" class="menuItemSub" onmouseout="fMenuOut();" onmouseover="fMenuOver();">
+         <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(14);" href="../index.php?proid=bread">Beer&nbsp;Bread</a></div>
         <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(3);" href="../index.php?proid=drinks">Frozen&nbsp;Drink&nbsp;Mixes</a></div>
         <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(12);" href="../index.php?proid=kstuff">Ken's&nbsp;Stuff</a></div>
         <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(7);" href="../index.php?proid=salsa">Salsa&nbsp;Magic</a></div>

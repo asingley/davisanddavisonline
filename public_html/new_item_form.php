@@ -18,6 +18,7 @@ Product Name: <input type="text" name="prod_name"/></br>
 <input type="radio" name="group1" value="kstuff"> Ken's Stuff<br>
 <input type="radio" name="group1" value="must" > Mustards and Relishes<br>
 <input type="radio" name="group1" value="salsa"> Salsa Magic<br>
+<input type="radio" name="group1" value="bread"> Bread<br>
 
 <script type="text/javascript">
 function formatText (el,tag) {

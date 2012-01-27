@@ -61,6 +61,10 @@ if($row['prod_type'] == "salsa")
 	echo '<input type="radio" name="group1" value="salsa" checked> Salsa Magic<br>';
 else
 	echo '<input type="radio" name="group1" value="salsa"> Salsa Magic<br>';
+if($row['prod_type'] == "bread")
+echo '<input type="radio" name="group1" value="bread" checked> Bread<br>';
+else
+echo '<input type="radio" name="group1" value="bread"> Bread<br>';
 $description = base64_decode($row['description']);
 $description = str_replace("<br />", " ", $description );
 
