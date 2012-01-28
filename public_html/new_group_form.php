@@ -10,7 +10,7 @@ if(!session_is_registered(myusername)){
 <H1>New Group Portal</H1>
 <hr>
 
-<form enctype="multipart/form-data" action="submit_new_item.php" method="post"></br>
+<form enctype="multipart/form-data" action="submit_new_group.php" method="post"></br>
 Group Name: <input type="text" name="group_name"/></br>
 Group Short Name: <input type="text" name="short_name"/></br>
 
@@ -36,7 +36,6 @@ Group Description:<br>
 
 <br>
 
-Price Per Unit: <input type="text" name="prod_price"/><br>
 <br>
 <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
 Choose a file to upload: <input name="uploadedfile" type="file" /><br />
