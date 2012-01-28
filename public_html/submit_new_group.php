@@ -20,8 +20,8 @@ if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
 
 $target_path = basename( $_FILES['uploadedfile']['name']); //get filename without directory
 
-$description = base64_encode(nl2br(str_replace('  ', ' &nbsp;', htmlspecialchars($_POST[prod_desc]))));
-$name = base64_encode($_POST[prod_name]);
+$description = base64_encode(nl2br(str_replace('  ', ' &nbsp;', htmlspecialchars($_POST[group_desc]))));
+$name = base64_encode($_POST[group_name]);
 $con = mysql_connect("localhost","davis","davis");
 if (!$con)
   {
@@ -32,7 +32,7 @@ mysql_select_db("davisanddavis", $con);
 
 $sql="INSERT INTO groups (group_name, short_name, description, img_filename, active)
 VALUES
-('$name','$description','$_POST[prod_recip]','$_POST[group1]','$target_path','$_POST[prod_price]', 0)";
+('$name', '$_POST[short_name]' ,'$description','$target_path', 0)";
 
 if (!mysql_query($sql,$con))
   {
