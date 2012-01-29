@@ -407,8 +407,8 @@ a.signin.menu-open span {
     bottom: 24.5px; 
     right: 0px; 
     margin-bottom:50px;
-    margin-right: 0px;
-    *margin-right: -1px;
+    margin-right: 0%;
+
     color:#789;
     font-size:11px;
 }
