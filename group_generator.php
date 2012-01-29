@@ -8,7 +8,7 @@ if (!$con)
 }
 
 mysql_select_db("davisanddavis", $con);
-$sql= "SELECT * FROM groups where short_name=$proid";
+$sql= "SELECT * FROM groups where short_name='$proid'";
 $result = mysql_query($sql);
 $row = mysql_fetch_array($result);
 
