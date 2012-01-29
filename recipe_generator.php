@@ -18,8 +18,7 @@
                 to our <a href="mailto:customerrelations@davisanddavisonline.com">Customer 
                 Relations</a> team. 
                 </p>
-                </td>
-                </tr>
+                
                 
                <?php  
              $con = mysql_connect("localhost","davis","davis");
@@ -38,7 +37,7 @@ if (!$con)
             echo '<li><a href="#'.$row['id'].'">'.base64_decode($row['recipe_name']).'</a></li>';
             }
             echo '</ul>';
-            
+            echo '</td></tr>';
             echo '<tr>';
             while ($row = mysql_fetch_array($result))
             {
