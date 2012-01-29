@@ -22,7 +22,7 @@ echo '<center><H2>' . base64_decode($row['group_name']) . '</H2></center>';
 $sqlOne = "SELECT * FROM products WHERE prod_type='$proid'";
 $resultOne = mysql_query($sqlOne);
 
-
+echo htmlspecialchars_decode(base64_decode($row['description']));
 echo '<div id="prodDisp">';
 while ($rowOne = mysql_fetch_array($resultOne))
 {
