@@ -61,19 +61,19 @@ else {
 				require_once("recipe_generator.php");
 			}
 			elseif ($proid == 'about'){
-				require_once("about.php");
+				require_once("public_html/about.php");
 			}
 			elseif ($proid == 'contact'){
-				require_once("contact.php");
+				require_once("public_html/contact.php");
 			}
 			elseif ($proid == 'crelation'){
-				require_once("crelation.php");
+				require_once("public_html/crelation.php");
 			}
 			elseif ($proid == 'feedback'){
-				require_once("feedback.php");
+				require_once("public_html/feedback.php");
 			}
 			elseif ($proid == 'policies'){
-				require_once("policies.php");
+				require_once("public_html/policies.php");
 			}
 			else{
 				require_once("group_generator.php");
