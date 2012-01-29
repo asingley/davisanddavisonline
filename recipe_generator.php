@@ -40,14 +40,16 @@ if (!$con)
             echo '</td></tr>';
             echo '<tr>';
             $result = mysql_query($sql);
+			echo '<td valign="top">';
             while ($row = mysql_fetch_array($result))
             {
             	
-            echo '<td><h1><a name="'.$row['id'].'" id="'.$row['id'].'"></a>'.base64_decode($row['recipe_name']).'</h1>';
+            echo '<h1><a name="'.$row['id'].'" id="'.$row['id'].'"></a>'.base64_decode($row['recipe_name']).'</h1>';
             echo htmlspecialchars_decode(base64_decode($row['description']));
             echo '<div style="text-align:center;font-weight:bold;"><a href="#top">TOP</a></div>';
-            echo '</td>';
+
             }
+            echo '</td>';
             echo '</tr>';
             //require_once("public_html/db_close.php");
             mysql_close($con);
