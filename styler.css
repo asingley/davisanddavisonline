@@ -398,7 +398,7 @@ a.signin.menu-open span {
     -webkit-border-bottom-right-radius:5px;
     display:none;
     background-color:#ddeef6;
-    position:absolute;
+    position:relative;
     width:210px;
     z-index:100;
     border:1px transparent;
@@ -406,7 +406,7 @@ a.signin.menu-open span {
     padding:12px;
     bottom: 24.5px; 
     right: 0px; 
-    margin-bottom:2%;
+    margin-bottom:24px;
     margin-right: 0px;
     *margin-right: -1px;
     color:#789;
