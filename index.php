@@ -6,7 +6,7 @@ if(!isset($_COOKIE['no_splash'])) {
 	header('Location: intro.php'); // Redirect code
 } else { 
 require("public_html/header.php");
-if (!isset($_GET["proid"])){
+if (!isset($_GET["proid"]) && !isset($_GET["gitemid"])){
 	
 ?>
 
