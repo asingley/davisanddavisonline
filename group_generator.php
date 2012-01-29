@@ -24,7 +24,7 @@ $resultOne = mysql_query($sqlOne);
 $rowOne = mysql_fetch_array($resultOne);
 
 echo '<div id="prodDisp">';
-echo '<div class="conTitle">'.base64_decode($rowOne['prod_name']).'</div>';
+echo '<div class="conTitle">'.base64_decode($rowOne['product_name']).'</div>';
 echo '<a href="product_generator.php?gitemid="'.$rowOne['id'].'><img src="img/'.$rowOne['img_filename'].'" /></a>';
 echo '<div class="conOrder"><a href="cheeseballBanana.htm">Ordering Info</a></div>';
 echo '</div>';
