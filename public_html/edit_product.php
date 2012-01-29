@@ -25,46 +25,13 @@ if($row['prod_type'] == "alone")
 	echo '<input type="radio" name="group1" value="alone" checked> Stand Alone Item<br>';
 else 
 	echo '<input type="radio" name="group1" value="alone" > Stand Alone Item<br>';
-if($row['prod_type'] == "drink")
-	echo '<input type="radio" name="group1" value="drink" checked> Drinks<br>';
-else
-	echo '<input type="radio" name="group1" value="drink"> Drinks<br>';
-if($row['prod_type'] == "bowl")
-	echo '<input type="radio" name="group1" value="bowl" checked> Bowls<br>';
-else
-	echo '<input type="radio" name="group1" value="bowl"> Bowls<br>';
-if($row['prod_type'] == "cball")
-	echo '<input type="radio" name="group1" value="cball" checked> Cheeseball Kits<br>';
-else
-	echo '<input type="radio" name="group1" value="cball" > Cheeseball Kits<br>';
-if($row['prod_type'] == "oil")
-	echo '<input type="radio" name="group1" value="oil" checked> Cooking and Dipping Oils<br>';
-else
-	echo '<input type="radio" name="group1" value="oil"> Cooking and Dipping Oils<br>';
-if($row['prod_type'] == "dip")
-	echo '<input type="radio" name="group1" value="dip" checked> Dipper Mixes<br>';
-else
-	echo '<input type="radio" name="group1" value="dip"> Dipper Mixes<br>';
-if($row['prod_type'] == "fdrink")
-	echo '<input type="radio" name="group1" value="fdrink" checked> Frozen Drinks and Mixes<br>';
-else
-	echo '<input type="radio" name="group1" value="fdrink"> Frozen Drinks and Mixes<br>';
-if($row['prod_type'] == "kstuff")
-	echo '<input type="radio" name="group1" value="kstuff" checked> Ken\'s Stuff<br>';
-else
-	echo '<input type="radio" name="group1" value="kstuff"> Ken\'s Stuff<br>';
-if($row['prod_type'] == "must")
-	echo '<input type="radio" name="group1" value="must" checked> Mustards and Relishes<br>';
-else
-	echo '<input type="radio" name="group1" value="must" > Mustards and Relishes<br>';
-if($row['prod_type'] == "salsa")
-	echo '<input type="radio" name="group1" value="salsa" checked> Salsa Magic<br>';
-else
-	echo '<input type="radio" name="group1" value="salsa"> Salsa Magic<br>';
-if($row['prod_type'] == "bread")
-echo '<input type="radio" name="group1" value="bread" checked> Bread<br>';
-else
-echo '<input type="radio" name="group1" value="bread"> Bread<br>';
+$sqlOne= "SELECT * FROM groups WHERE active=1";
+$resultOne = mysql_query($sqlOne);
+
+while ($rowOne = mysql_fetch_array($resultOne))
+{
+	echo '<input type="radio" name="group1" value="'.$rowOne[short_name].'" >'.base64_decode($rowOne[group_name]).'<br>';
+}
 $description = base64_decode($row['description']);
 $description = str_replace("<br />", " ", $description );
 
