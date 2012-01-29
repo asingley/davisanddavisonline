@@ -398,14 +398,13 @@ a.signin.menu-open span {
     -webkit-border-bottom-right-radius:5px;
     display:none;
     background-color:#ddeef6;
-    position:relative;
+    position:absolute;
     width:210px;
     z-index:100;
     border:1px transparent;
     text-align:left;
     padding:12px;
     bottom: 24.5px; 
-    right: 0px; 
     margin-bottom:50px;
     margin-right: 0%;
 
