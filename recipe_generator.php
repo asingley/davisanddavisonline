@@ -43,8 +43,8 @@ if (!$con)
             while ($row = mysql_fetch_array($result))
             {
             	
-            echo '<td valign="top"><h1><a name="'.$row['id'].'" id="'.$row['id'].'"></a>'.$row['recipe_name'].'</h1>';
-            
+            echo '<td valign="top"><h1><a name="'.$row['id'].'" id="'.$row['id'].'"></a>'.base64_decode($row['recipe_name']).'</h1>';
+            echo htmlspecialchars_decode(base64_decode($row['description']));
             }
             echo '</tr>';
             //require_once("public_html/db_close.php");
