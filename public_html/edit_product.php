@@ -34,7 +34,7 @@ while ($rowOne = mysql_fetch_array($resultOne))
 		echo '<input type="radio" name="group1" value="'.$rowOne[short_name].'" checked>'.base64_decode($rowOne[group_name]).'<br>';
 	}
 	else {
-		echo '<input type="radio" name="group1" value="'.$rowOne[short_name].'" checked>'.base64_decode($rowOne[group_name]).'<br>';
+		echo '<input type="radio" name="group1" value="'.$rowOne[short_name].'" >'.base64_decode($rowOne[group_name]).'<br>';
 	}
 	}
 $description = base64_decode($row['description']);
