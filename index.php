@@ -52,7 +52,7 @@ if (!isset($_GET["proid"]) && !isset($_GET["gitemid"])){
 }
 else {
 	if (isset($_GET["gitemid"])){$proid =$_GET["gitemid"]; }
-	$proid = $_GET["proid"];
+	else {$proid = $_GET["proid"];}
 		if (is_numeric($proid)){
 		require_once("product_generator.php");
 		}
