@@ -19,7 +19,7 @@ echo '<center><H2>' . base64_decode($row['group_name']) . '</H2></center>';
 		</div>
 		
 <?php 
-$sqlOne = "SELECT * FROM products WHERE prod_type='$proid'";
+$sqlOne = "SELECT * FROM products WHERE prod_type='$proid' AND active=1";
 $resultOne = mysql_query($sqlOne);
 
 echo htmlspecialchars_decode(base64_decode($row['description']));
