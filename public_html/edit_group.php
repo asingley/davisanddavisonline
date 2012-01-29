@@ -55,6 +55,7 @@ Choose a file to upload: <input name="uploadedfile" type="file" /><br />
 <br>
 <h4>Active:</h4>
 <?php 
+echo '<input type="hidden" name="proid" value="'.$proid.'">';
 if ($row['active'] == 1){
 	echo '<input type="radio" name="group2" value="1" checked> Active<br>';
 	echo '<input type="radio" name="group2" value="0"> Not Active(No Longer a Valid Group)<br>';}
