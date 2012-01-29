@@ -57,7 +57,12 @@ else {
 		require_once("product_generator.php");
 		}
 		else{
-			require_once("group_generator.php");
+			if ($proid == 'recipe'){
+				require_once("recipe_generator.php");
+			}
+			else{
+				require_once("group_generator.php");
+			}
 		}
 
 
