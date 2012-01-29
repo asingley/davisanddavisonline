@@ -3,13 +3,9 @@ session_start();
 if(!session_is_registered(myusername)){
 	header("location:index.php");
 }
-$target_path = "../img/";
 
-/* Add the original filename to our target path.
- Result is "uploads/filename.extension" */
-$target_path = $target_path . basename( $_FILES['uploadedfile']['name']);
-$description = base64_encode(nl2br(str_replace('  ', ' &nbsp;', htmlspecialchars($_POST[group_desc]))));
-$name = base64_encode($_POST[group_name]);
+$description = base64_encode(nl2br(str_replace('  ', ' &nbsp;', htmlspecialchars($_POST[recipe_desc]))));
+$name = base64_encode($_POST[recipe_name]);
 
 
 
