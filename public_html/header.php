@@ -39,19 +39,23 @@
         <div class="menuItem"><a href="homeparty.htm">HOME PARTY</a></div>
         <div class="menuItem"><a href="http://www.davisanddavisonline.com/cgi-davisanddavisonline/sb/order.cgi?storeid=*30b3740e4644d5af8f32bfa5e10499e5a67c8e4df6afa904c38b&function=show">SHOPPING&nbsp;BASKET</a></div>
         <div id="menuSub1" class="menuItemSub" onmouseout="fMenuOut();" onmouseover="fMenuOver();">
-         <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(14);" href="../index.php?proid=bread">Beer&nbsp;Bread</a></div>
-        <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(3);" href="../index.php?proid=drinks">Frozen&nbsp;Drink&nbsp;Mixes</a></div>
-        <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(12);" href="../index.php?proid=kstuff">Ken's&nbsp;Stuff</a></div>
-        <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(7);" href="../index.php?proid=salsa">Salsa&nbsp;Magic</a></div>
-        <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(5);" href="../index.php?proid=mustard">Mustards&nbsp;&amp;&nbsp;Relishes</a></div>
-        <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(2);" href="../index.php?proid=dippermixes">Dipper&nbsp;Mixes</a></div>
-        <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(1);" href="../index.php?proid=oils">Cooking&nbsp;&amp;&nbsp;Dipping&nbsp;Oils</a></div>
-        <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(16);" href="../index.php?proid=soups">Bountiful&nbsp;Bowls</a></div>
-        <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(10);" href="../index.php?proid=cheeseball">Cheeseball&nbsp;Kits</a></div>
+         <?php 
+            require_once("public_html/db_connect.php");
+            $sql= "SELECT * FROM groups WHERE active=1";
+            $result = mysql_query($sql);
+            
+            while ($row = mysql_fetch_array($result))
+            {
+            echo '<div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="../index.php?proid='. $row['short_name'] .'">' . base64_decode($row['product_name']) . '</a></div>';
+            }
+            require_once("public_html/db_close.php");
+            ?>
         
+        <!--  <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(10);" href="../index.php?proid=cheeseball">Cheeseball&nbsp;Kits</a></div>
+        -->
             <?php 
             require_once("public_html/db_connect.php");
-            $sql= "SELECT * FROM products WHERE active=1";
+            $sql= "SELECT * FROM products WHERE active=1 AND prod_type=\'alone\'";
             $result = mysql_query($sql);
             
             while ($row = mysql_fetch_array($result))
