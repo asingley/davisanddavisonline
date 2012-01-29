@@ -402,11 +402,11 @@ a.signin.menu-open span {
     width:210px;
     z-index:100;
     border:1px transparent;
-    text-align:right;
+    text-align:left;
     padding:12px;
     bottom: 24.5px; 
     right: 0px; 
-    
+    margin-bottom:2%;
     margin-right: 0px;
     *margin-right: -1px;
     color:#789;
