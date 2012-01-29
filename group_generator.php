@@ -11,8 +11,8 @@ mysql_select_db("davisanddavis", $con);
 $sql= "SELECT * FROM groups where short_name=$proid";
 $result = mysql_query($sql);
 $row = mysql_fetch_array($result);
-echo $proid;
-echo $row['group_name'];
+
+echo base64_decode($row['group_name']);
 ?>
 		<div class="purpBar">
 			<img src="images/purplefadebar.jpg" alt="" />
