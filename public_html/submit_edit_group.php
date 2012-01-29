@@ -21,7 +21,7 @@ if (basename( $_FILES['uploadedfile']['name']) == ""){
 	
 	mysql_select_db("davisanddavis", $con);
 	
-	$sql="UPDATE groups SET group_name='$name', short_name='$_POST[short_name]' description='$description' , active='$_POST[group2]' WHERE id='$_POST[proid]'";
+	$sql="UPDATE groups SET group_name='$name', short_name='$_POST[short_name]' , description='$description' , active='$_POST[group2]' WHERE id='$_POST[proid]'";
 	
 	
 	if (!mysql_query($sql,$con))
