@@ -398,16 +398,16 @@ a.signin.menu-open span {
     -webkit-border-bottom-right-radius:5px;
     display:none;
     background-color:#ddeef6;
-    position:absolute;
+    position:fixed;
     width:210px;
     z-index:100;
     border:1px transparent;
     text-align:left;
     padding:12px;
-    bottom: 24.5px; 
+    bottom: 0; 
     margin-bottom:50px;
     margin-right: 0%;
-
+	
     color:#789;
     font-size:11px;
 }
