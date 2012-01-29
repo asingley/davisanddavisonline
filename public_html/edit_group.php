@@ -11,6 +11,9 @@ require_once("db_connect.php");
 $sql= "SELECT * FROM groups where id=$proid";
 $result = mysql_query($sql);
 $row = mysql_fetch_array($result);
+
+$description = base64_decode($row['description']);
+$description = str_replace("<br />", " ", $description );
 ?>
 <head>
 <title>New Group Portal</title>
@@ -37,7 +40,7 @@ el.value=el.value.replace(selectedText,newText)
 </script>
 
 Group Description:<br>
-<textarea name="group_desc" rows = "12" cols = "50"><?php echo base64_decode($row['description']);?></textarea><br>
+<textarea name="group_desc" rows = "12" cols = "50"><?php echo $description;?></textarea><br>
 <input type="button" value="Bold" onclick="formatText (group_desc,'b');" />
 <input type="button" value="Italic" onclick="formatText (group_desc,'i');" />
 <input type="button" value="Underline" onclick="formatText (group_desc,'u');" />
