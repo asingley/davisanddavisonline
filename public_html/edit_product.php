@@ -14,7 +14,7 @@ $row = mysql_fetch_array($result);
 
 
 ?>
-<H1>Editing: <?php echo $row['product_name'];?></H1>
+<H1>Editing: <?php echo base64_decode($row['product_name']);?></H1>
 <hr>
 
 <form enctype="multipart/form-data" action="submit_product_edit.php" method="post"></br>

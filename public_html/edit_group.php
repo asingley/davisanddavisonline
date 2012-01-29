@@ -2,7 +2,16 @@
 session_start();
 if(!session_is_registered(myusername)){
 	header("location:index.php");
-}?>
+}
+
+$proid = $_GET["proid"];
+
+require_once("db_connect.php");
+
+$sql= "SELECT * FROM groups where id=$proid";
+$result = mysql_query($sql);
+$row = mysql_fetch_array($result);
+?>
 <head>
 <title>New Group Portal</title>
 </head>
@@ -11,8 +20,8 @@ if(!session_is_registered(myusername)){
 <hr>
 
 <form enctype="multipart/form-data" action="submit_edit_group.php" method="post"></br>
-Group Name: <input type="text" name="group_name"/></br>
-Group Short Name: <input type="text" name="short_name"/></br>
+Group Name: <input type="text" name="group_name" value="<?php echo base64_decode($row['group_name']);?>"/></br>
+Group Short Name: <input type="text" name="short_name"value="<?php echo base64_decode($row['short_name']);?>"/></br>
 
 
 
@@ -28,7 +37,7 @@ el.value=el.value.replace(selectedText,newText)
 </script>
 
 Group Description:<br>
-<textarea name="group_desc" rows = "12" cols = "50"></textarea><br>
+<textarea name="group_desc" rows = "12" cols = "50"><?php echo base64_decode($row['description']);?></textarea><br>
 <input type="button" value="Bold" onclick="formatText (group_desc,'b');" />
 <input type="button" value="Italic" onclick="formatText (group_desc,'i');" />
 <input type="button" value="Underline" onclick="formatText (group_desc,'u');" />
