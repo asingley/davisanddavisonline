@@ -27,7 +27,7 @@ el.value=el.value.replace(selectedText,newText)
 </script>
 
 Product Description:<br>
-<textarea name="recipe_desc" rows = "12" cols = "50"></textarea><br>
+<textarea name="recipe_desc" rows = "20" cols = "80"></textarea><br>
 <input type="button" value="Bold" onclick="formatText (recipe_desc,'b');" />
 <input type="button" value="Italic" onclick="formatText (recipe_desc,'i');" />
 <input type="button" value="Underline" onclick="formatText (recipe_desc,'u');" />
@@ -35,7 +35,6 @@ Product Description:<br>
 
 
 <br>
-<input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
-Choose a file to upload: <input name="uploadedfile" type="file" /><br />
+
 <input type="submit" value="Submit"/><a href="../admin.php">Return to Admin Home</a>
 </form>
