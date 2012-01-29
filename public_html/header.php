@@ -48,13 +48,13 @@
             {
             echo '<div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="../index.php?proid='. $row['short_name'] .'">' . base64_decode($row['group_name']) . '</a></div>';
             }
-            require_once("public_html/db_close.php");
+            //require_once("public_html/db_close.php");
             ?>
         
         <!--  <div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(10);" href="../index.php?proid=cheeseball">Cheeseball&nbsp;Kits</a></div>
         -->
             <?php 
-            require_once("public_html/db_connect.php");
+            //require_once("public_html/db_connect.php");
             $sqlOne= "SELECT * FROM products WHERE active=1 AND prod_type='alone'";
             $resultOne = mysql_query($sqlOne);
             
