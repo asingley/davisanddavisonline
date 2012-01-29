@@ -21,3 +21,16 @@
                 </td>
                 </tr>
                 </table>
+               <?php  
+                 require_once("public_html/db_connect.php");
+            $sql= "SELECT * FROM recipes WHERE active=1";
+            $result = mysql_query($sql);
+            echo '<ul>';
+            while ($row = mysql_fetch_array($result))
+            {
+            echo '<li><a href="#'.$row['id'].'">'.$row['recipe_name'].'</a></li>';
+            }
+            echo '</ul>';
+            require_once("public_html/db_close.php");
+			?>
+</div>
