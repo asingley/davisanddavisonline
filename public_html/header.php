@@ -55,12 +55,12 @@
         -->
             <?php 
             require_once("public_html/db_connect.php");
-            $sql= "SELECT * FROM products WHERE active=1 AND prod_type='alone'";
-            $result = mysql_query($sql);
+            $sqlOne= "SELECT * FROM products WHERE active=1 AND prod_type='alone'";
+            $resultOne = mysql_query($sqlOne);
             
-            while ($row = mysql_fetch_array($result))
+            while ($rowOne = mysql_fetch_array($resultOne))
             {
-            echo '<div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="../index.php?proid='. $row['id'] .'">' . base64_decode($row['product_name']) . '</a></div>';
+            echo '<div class="menuItem"><a onmouseout="fMoneyOut();" onmouseover="fMoneyShot(11);" href="../index.php?proid='. $rowOne['id'] .'">' . base64_decode($rowOne['product_name']) . '</a></div>';
             }
             require_once("public_html/db_close.php");
             ?>
