@@ -11,7 +11,7 @@ mysql_select_db("davisanddavis", $con);
 $sql= "SELECT * FROM groups where short_name=$proid";
 $result = mysql_query($sql);
 $row = mysql_fetch_array($result);
-
+echo $proid;
 echo $row['group_name'];
 ?>
 		<div class="purpBar">
