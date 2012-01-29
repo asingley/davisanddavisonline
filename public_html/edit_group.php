@@ -24,7 +24,7 @@ $description = str_replace("<br />", " ", $description );
 
 <form enctype="multipart/form-data" action="submit_edit_group.php" method="post"></br>
 Group Name: <input type="text" name="group_name" value="<?php echo base64_decode($row['group_name']);?>"/></br>
-Group Short Name: <input type="text" name="short_name"value="<?php echo base64_decode($row['short_name']);?>"/></br>
+Group Short Name: <input type="text" name="short_name"value="<?php echo $row['short_name'];?>"/></br>
 
 
 
