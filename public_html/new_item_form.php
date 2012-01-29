@@ -7,6 +7,7 @@
 
 <form enctype="multipart/form-data" action="submit_new_item.php" method="post"></br>
 Product Name: <input type="text" name="prod_name"/></br>
+<input type="radio" name="group1" value="alone" checked> Stand Alone Item<br>
 <?php 
 require_once("db_connect.php");
 $sql= "SELECT * FROM groups WHERE active=1";
