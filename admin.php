@@ -96,13 +96,13 @@ while($row = mysql_fetch_row($result)) {
 }
 print("</TABLE>\n");
 
-echo '<div class="tabber">';
+
+echo '</div>';
+
+
 echo '<div class="tabbertab">';
 echo '<H2>Recipes</H2>';
 echo '</div>';
-echo '</div>';
-echo '</div>';
-
 
 
 echo '</div>';
