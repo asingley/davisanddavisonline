@@ -21,7 +21,7 @@ if (basename( $_FILES['uploadedfile']['name']) == ""){
 	
 	mysql_select_db("davisanddavis", $con);
 	
-	$sql="UPDATE groups SET group_name='$name', short_name='$_POST[short_name]' description='$description;' , active='$_POST[group2]' WHERE id='$_POST[proid]'";
+	$sql="UPDATE groups SET group_name='$name', short_name='$_POST[short_name]' description='$description' , active='$_POST[group2]' WHERE id='$_POST[proid]'";
 	
 	
 	if (!mysql_query($sql,$con))
@@ -55,7 +55,7 @@ if (!$con)
 
 mysql_select_db("davisanddavis", $con);
 
-$sql="UPDATE products SET product_name='$name', description='$description' , recipe='$_POST[prod_recip]' , prod_type='$_POST[group1]' , img_filename='$target_path' , cost='$_POST[prod_price]', active='$_POST[group2]' WHERE id='$_POST[proid]'";
+$sql="UPDATE groups SET product_name='$name', description='$description' , recipe='$_POST[prod_recip]' , prod_type='$_POST[group1]' , img_filename='$target_path' , cost='$_POST[prod_price]', active='$_POST[group2]' WHERE id='$_POST[proid]'";
 
 
 if (!mysql_query($sql,$con))
