@@ -12,7 +12,7 @@ $sql= "SELECT * FROM groups where short_name='$proid'";
 $result = mysql_query($sql);
 $row = mysql_fetch_array($result);
 
-echo base64_decode($row['group_name']);
+echo '<center><H2>' . base64_decode($row['group_name']) . '</H2></center>';
 ?>
 		<div class="purpBar">
 			<img src="images/purplefadebar.jpg" alt="" />
