@@ -22,15 +22,23 @@
                 </tr>
                 </table>
                <?php  
-                 require_once("public_html/db_connect.php");
-            $sql= "SELECT * FROM recipes WHERE active=1";
-            $result = mysql_query($sql);
+             $con = mysql_connect("localhost","davis","davis");
+if (!$con)
+{
+	die('Could not connect: ' . mysql_error());
+}
+
+               mysql_select_db("davisanddavis", $con);
+               $sql= "SELECT * FROM recipes where id=$proid";
+               $result = mysql_query($sql);
+               
             echo '<ul>';
             while ($row = mysql_fetch_array($result))
             {
             echo '<li><a href="#'.$row['id'].'">'.$row['recipe_name'].'</a></li>';
             }
             echo '</ul>';
-            require_once("public_html/db_close.php");
-			?>
+            //require_once("public_html/db_close.php");
+            mysql_close($con);
+            ?>
 </div>
