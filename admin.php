@@ -99,6 +99,12 @@ print("</TABLE>\n");
 
 echo '</div>';
 
+echo '<div class="tabber">';
+echo '<div class="tabbertab">';
+echo '<H2>Recipes</H2>';
+echo '</div>';
+echo '</div>';
+
 echo '</div>';
 require_once("public_html/db_close.php");
 

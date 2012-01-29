@@ -7,18 +7,18 @@
 
 <form enctype="multipart/form-data" action="submit_new_item.php" method="post"></br>
 Product Name: <input type="text" name="prod_name"/></br>
+<?php 
+require_once("db_connect.php");
+$sql= "SELECT * FROM groups WHERE active=1";
+$result = mysql_query($sql);
 
-<input type="radio" name="group1" value="alone" checked> Stand Alone Item<br>
-<input type="radio" name="group1" value="drink"> Drinks<br>
-<input type="radio" name="group1" value="bowl"> Bowls<br>
-<input type="radio" name="group1" value="cball"> Cheeseball Kits<br>
-<input type="radio" name="group1" value="oil"> Cooking and Dipping Oils<br>
-<input type="radio" name="group1" value="dip"> Dipper Mixes<br>
-<input type="radio" name="group1" value="fdrink"> Frozen Drinks and Mixes<br>
-<input type="radio" name="group1" value="kstuff"> Ken's Stuff<br>
-<input type="radio" name="group1" value="must" > Mustards and Relishes<br>
-<input type="radio" name="group1" value="salsa"> Salsa Magic<br>
-<input type="radio" name="group1" value="bread"> Bread<br>
+while ($row = mysql_fetch_array($result))
+{
+	echo '<input type="radio" name="group1" value="'.$row[short_name].'" >'.base64_decode($row[group_name]).'<br>';
+}
+require_once("db_close.php");
+?>
+
 
 <script type="text/javascript">
 function formatText (el,tag) {
