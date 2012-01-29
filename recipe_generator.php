@@ -43,7 +43,7 @@ if (!$con)
             while ($row = mysql_fetch_array($result))
             {
             	
-            echo '<td valign="top"><h1><a name="'.$row['id'].'" id="'.$row['id'].'"></a>'.base64_decode($row['recipe_name']).'</h1>';
+            echo '<td><h1><a name="'.$row['id'].'" id="'.$row['id'].'"></a>'.base64_decode($row['recipe_name']).'</h1>';
             echo htmlspecialchars_decode(base64_decode($row['description']));
             echo '<div style="text-align:center;font-weight:bold;"><a href="#top">TOP</a></div>';
             echo '</td>';
