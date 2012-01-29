@@ -18,4 +18,18 @@ echo '<center><H2>' . base64_decode($row['group_name']) . '</H2></center>';
 			<img src="images/purplefadebar.jpg" alt="" />
 		</div>
 		
-<?php mysql_close($con);?>
+<?php 
+$sqlOne = "SELECT * FROM products WHERE prod_type='$proid'";
+$resultOne = mysql_query($sqlOne);
+$rowOne = mysql_fetch_array($resultOne);
+
+echo '<div id="prodDisp">';
+echo '<div class="conTitle">'.base64_decode($rowOne['prod_name']).'</div>';
+echo '<a href="product_generator.php?gitemid="'.$rowOne['id'].'><img src="img/'.$rowOne['img_filename'].'" /></a>';
+echo '<div class="conOrder"><a href="cheeseballBanana.htm">Ordering Info</a></div>';
+echo '</div>';
+echo '</div>';
+
+
+
+mysql_close($con);?>
