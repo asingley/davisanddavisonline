@@ -55,7 +55,7 @@
         -->
             <?php 
             require_once("public_html/db_connect.php");
-            $sql= "SELECT * FROM products WHERE active=1 AND prod_type=\'alone\'";
+            $sql= "SELECT * FROM products WHERE active=1 AND prod_type='alone'";
             $result = mysql_query($sql);
             
             while ($row = mysql_fetch_array($result))
