@@ -46,6 +46,7 @@ if (!$con)
             echo '<td valign="top"><h1><a name="'.$row['id'].'" id="'.$row['id'].'"></a>'.base64_decode($row['recipe_name']).'</h1>';
             echo htmlspecialchars_decode(base64_decode($row['description']));
             echo '<div style="text-align:center;font-weight:bold;"><a href="#top">TOP</a></div>';
+            echo '</td>';
             }
             echo '</tr>';
             //require_once("public_html/db_close.php");
