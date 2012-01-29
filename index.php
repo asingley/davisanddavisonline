@@ -60,6 +60,21 @@ else {
 			if ($proid == 'recipe'){
 				require_once("recipe_generator.php");
 			}
+			elseif ($proid == 'about'){
+				require_once("about.php");
+			}
+			elseif ($proid == 'contact'){
+				require_once("contact.php");
+			}
+			elseif ($proid == 'crelation'){
+				require_once("crelation.php");
+			}
+			elseif ($proid == 'feedback'){
+				require_once("feedback.php");
+			}
+			elseif ($proid == 'policies'){
+				require_once("policies.php");
+			}
 			else{
 				require_once("group_generator.php");
 			}

@@ -2,11 +2,11 @@
 					<img src="images/purplefadebar.jpg" alt="Davis And Davis" />
 				</div>
 				<div id="footer">
-					<span class="smallText"><a href="about.htm">About</a></span>
-					<span class="smallText"><a href="contact.htm">Contact</a></span>
-					<span class="smallText"><a href="relations.htm">Customer Relations</a></span>
+					<span class="smallText"><a href="../index.php?proid=about">About</a></span>
+					<span class="smallText"><a href="../index.php?proid=contact">Contact</a></span>
+					<span class="smallText"><a href="../index.php?proid=crelations">Customer Relations</a></span>
 					<span class="smallText"><a href="mailto:feedback02@davisanddavisonline.com">Feedback</a></span>
-					<span class="smallText"><a href="policies.htm">Policies</a></span>
+					<span class="smallText"><a href="../index.php?proid=policies">Policies</a></span>
 					<span class="smallText"><a href="login" class="signin">Admin</a></span>
 					
 					<fieldset id="signin_menu">
