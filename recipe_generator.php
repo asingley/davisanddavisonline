@@ -20,7 +20,7 @@
                 </p>
                 </td>
                 </tr>
-                </table>
+                
                <?php  
              $con = mysql_connect("localhost","davis","davis");
 if (!$con)
@@ -31,14 +31,24 @@ if (!$con)
                mysql_select_db("davisanddavis", $con);
                $sql= "SELECT * FROM recipes where active=1";
                $result = mysql_query($sql);
-               
+              
             echo '<ul>';
             while ($row = mysql_fetch_array($result))
             {
             echo '<li><a href="#'.$row['id'].'">'.base64_decode($row['recipe_name']).'</a></li>';
             }
             echo '</ul>';
+            
+            echo '<tr>';
+            while ($row = mysql_fetch_array($result))
+            {
+            	
+            echo '<td valign="top"><h1><a name="'.$row['id'].'" id="'.$row['id'].'"></a>'.$row['recipe_name'].'</h1>';
+            
+            }
+            echo '</tr>';
             //require_once("public_html/db_close.php");
             mysql_close($con);
             ?>
+            </table>
 </div>
