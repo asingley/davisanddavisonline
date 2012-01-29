@@ -12,7 +12,7 @@ $sql= "SELECT * FROM products where short_name=$proid";
 $result = mysql_query($sql);
 $row = mysql_fetch_array($result);
 
-echo $row[group_name];
+echo $row['group_name''];
 ?>
 		<div class="purpBar">
 			<img src="images/purplefadebar.jpg" alt="" />
