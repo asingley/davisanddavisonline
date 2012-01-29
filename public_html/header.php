@@ -29,7 +29,8 @@
     
 	<!--MAST-->	<div id="mast">
     	<img id="butCatalog" src="images/butCatalog.png" alt="Davis and Davis 2010 Print Catalog Button" onclick="javascript:window.open('dd_catalog.pdf','Davis and Davis 2010 Print Catalog');" />
-		<div title="Go back to the Davis and Davis Homepage" href="index.php"></div>
+		<div title="Go back to the Davis and Davis Homepage" ><a style='position:absolute;top:0px;left:0px;width:100%;height:100%;display:inline;' href ='../index.php'></a>
+		</div>
 	</div>
 	
 	<!--MENU-->
