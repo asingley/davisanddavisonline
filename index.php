@@ -66,7 +66,7 @@ else {
 			elseif ($proid == 'contact'){
 				require_once("public_html/contact.php");
 			}
-			elseif ($proid == 'crelation'){
+			elseif ($proid == 'crelations'){
 				require_once("public_html/crelations.php");
 			}
 			elseif ($proid == 'feedback'){
