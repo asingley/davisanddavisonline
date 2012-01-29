@@ -102,6 +102,8 @@ echo '</div>';
 
 echo '<div class="tabbertab">';
 echo '<H2>Recipes</H2>';
+echo '<a href="public_html/new_recipe_form.php">Add a new Recipe</a>';
+
 echo '</div>';
 
 
