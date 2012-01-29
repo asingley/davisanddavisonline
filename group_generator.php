@@ -21,8 +21,9 @@ echo '<center><H2>' . base64_decode($row['group_name']) . '</H2></center>';
 <?php 
 $sqlOne = "SELECT * FROM products WHERE prod_type='$proid'";
 $resultOne = mysql_query($sqlOne);
-$rowOne = mysql_fetch_array($resultOne);
 
+while ($rowOne = mysql_fetch_array($resultOne))
+{
 echo '<div id="prodDisp">';
 echo '<div class="conTitle">'.base64_decode($rowOne['product_name']).'</div>';
 echo '<a href="product_generator.php?gitemid="'.$rowOne['id'].'><img src="img/'.$rowOne['img_filename'].'" /></a>';
@@ -30,6 +31,6 @@ echo '<div class="conOrder"><a href="cheeseballBanana.htm">Ordering Info</a></di
 echo '</div>';
 echo '</div>';
 
-
+}
 
 mysql_close($con);?>
