@@ -33,7 +33,7 @@ Just choose the 2 or 6 Pack option in the drop-down, click the cart, and then se
 							<select id="selOpt">
 <?php 
 
-//require_once("public_html/db_connect.php");
+
 $con = mysql_connect("localhost","davis","davis");
 if (!$con)
 {
@@ -50,17 +50,16 @@ while ($rowOne = mysql_fetch_array($resultOne))
 }
 
 //<optgroup label="Create a Multi-Pack">
-echo '<option value="118">2 Pack: $20.00</option>';
+
 mysql_close($con);
-//<option value="27">6 Pack: $50.00</option>
-//require_once("public_html/db_close.php");
+
 ?>
 								</optgroup>
 </select>
 </td>
 <td>
-							<!-- <img onclick="fAddItem('drink')" class="cart" src="images/cart.gif" alt="Add this selection to your basket." />
---></td>
+							<img onclick="fAddItem('drink')" class="cart" src="images/cart.gif" alt="Add this selection to your basket." />
+</td>
 </tr>
 </table>
 </div>
