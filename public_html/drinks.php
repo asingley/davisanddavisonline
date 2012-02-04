@@ -33,7 +33,7 @@ Just choose the 2 or 6 Pack option in the drop-down, click the cart, and then se
 							<select id="selOpt">
 <?php 
 
-require_once("db_connect.php");
+require_once("../public_html/db_connect.php");
 $sqlOne= "SELECT * FROM products WHERE active=1 AND prod_type='drink'";
 $resultOne = mysql_query($sqlOne);
 
@@ -45,7 +45,7 @@ while ($rowOne = mysql_fetch_array($resultOne))
 /*<optgroup label="Create a Multi-Pack">
 <option value="118">2 Pack: $20.00</option>
 <option value="27">6 Pack: $50.00</option>*/
-require_once("db_close.php");
+require_once("../public_html/db_close.php");
 ?>
 								</optgroup>
 </select>
