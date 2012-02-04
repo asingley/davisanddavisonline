@@ -31,9 +31,9 @@ if (!$con)
 
 mysql_select_db("davisanddavis", $con);
 
-$sql="INSERT INTO products (product_name, description, recipe, prod_type, img_filename, cost, active)
+$sql="INSERT INTO products (shop_id, product_name, description, recipe, prod_type, img_filename, cost, active)
 VALUES
-('$name','$description','$_POST[prod_recip]','$_POST[group1]','$target_path','$_POST[prod_price]', 1)";
+('$_POST[shop_id]','$name','$description','$_POST[prod_recip]','$_POST[group1]','$target_path','$_POST[prod_price]', 1)";
 
 if (!mysql_query($sql,$con))
   {

@@ -1,6 +1,7 @@
 
 CREATE TABLE `products` (
 `id` int(4) NOT NULL auto_increment,
+`shop_id` int(6) NOT NULL,
 `product_name` varchar(65) NOT NULL default '',
 `description` text NOT NULL default '',
 `recipe`	text,

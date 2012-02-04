@@ -19,6 +19,7 @@ $row = mysql_fetch_array($result);
 
 <form enctype="multipart/form-data" action="submit_product_edit.php" method="post"></br>
 Product Name: <input type="text" name="prod_name" value="<?php echo base64_decode($row['product_name']);?>"/></br>
+Product ID Number(From ShopSite): <input type="text" name="shop_id" value="<?php echo $row['shop_id'];?>"/></br>
 <?php 
 echo '<input type="hidden" name="proid" value="'.$proid.'">';
 if($row['prod_type'] == "alone")
