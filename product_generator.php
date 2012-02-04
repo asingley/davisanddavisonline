@@ -20,7 +20,7 @@ echo '<select id="selOpt">';
 echo '<option value="'.$row['shop_id'].'">'.$row['cost'].'</option>';
 echo '</optgroup>';
 echo '</select>';
-echo '<img onclick="fAddItem(\'lulu\');" class="cart" src="images/cart.gif" alt="Add this selection to your basket." />';
+echo '<img onclick="fAddItem('.$row['prod_type'].');" class="cart" src="images/cart.gif" alt="Add this selection to your basket." />';
 echo '</div>';
 echo '<div class="purpBar">';
 echo '<img src="images/purplefadebar.jpg" alt="Davis And Davis" />';

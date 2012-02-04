@@ -133,7 +133,7 @@
 			var strFunction='add';
 
 			switch(prod){
-				case 'vanilla':
+				case 'alone':
 					xStoreID='*30b3740ec644d5688492bfa5900499e5a67c8e4df6afa904c308';
 					break;
 				case 'soup':
