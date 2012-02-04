@@ -42,9 +42,9 @@ while ($rowOne = mysql_fetch_array($resultOne))
 	echo '<option value="'.$rowOne['shop_id'].'">'.base64_decode($rowOne['product_name']).': $'.$rowOne['cost'].'</option>';
 }
 
-/*<optgroup label="Create a Multi-Pack">
-<option value="118">2 Pack: $20.00</option>
-<option value="27">6 Pack: $50.00</option>*/
+//<optgroup label="Create a Multi-Pack">
+echo '<option value="118">2 Pack: $20.00</option>';
+//<option value="27">6 Pack: $50.00</option>
 require_once("public_html/db_close.php");
 ?>
 								</optgroup>
