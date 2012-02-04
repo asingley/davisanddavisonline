@@ -38,7 +38,7 @@
 	<div id="menu">
         <div id="firstItem" onmouseout="fMenuOut();" onmouseover="fShowSub('menuSub1');fMenuOver();">PRODUCTS</div>
         <div class="menuItem"><a href="index.php?proid=recipe">RECIPES</a></div>
-        <div class="menuItem"><a href="homeparty.htm">HOME PARTY</a></div>
+        <div class="menuItem"><a href="index.php?proid=hparty">HOME PARTY</a></div>
         <div class="menuItem"><a href="http://www.davisanddavisonline.com/cgi-davisanddavisonline/sb/order.cgi?storeid=*30b3740e4644d5af8f32bfa5e10499e5a67c8e4df6afa904c38b&function=show">SHOPPING&nbsp;BASKET</a></div>
         <div id="menuSub1" class="menuItemSub" onmouseout="fMenuOut();" onmouseover="fMenuOver();">
          <?php 

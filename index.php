@@ -78,6 +78,9 @@ else {
 			elseif ($proid == 'drink'){
 				require_once("public_html/drinks.php");
 			}
+			elseif ($proid == 'hparty'){
+				require_once("public_html/hparty.php");
+			}
 			else{
 				require_once("group_generator.php");
 			}
