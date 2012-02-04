@@ -1,4 +1,4 @@
-<script type="text/javascript" src="scripter.js"></script>
+
 <link rel="stylesheet" type="text/css" href="product.css" />
 <?php 
 $con = mysql_connect("localhost","davis","davis");
@@ -13,7 +13,7 @@ $result = mysql_query($sql);
 $row = mysql_fetch_array($result);
 
 
-
+echo '<script type="text/javascript" src="scripter.js"></script>';
 echo '<div id="sales-container">';
 echo '<H3>' . base64_decode($row['product_name']) . '</H3>';
 echo '$' . $row['cost'];
