@@ -127,7 +127,7 @@
 		
 		function fAddItem(prod){
 			var xItemNum=document.getElementById('selOpt').value;
-			var xStoreID='';
+			var xStoreID='*30b3740ec644d5688492bfa5900499e5a67c8e4df6afa904c308';
 			var xSuper='';
 			var strDBName='products';
 			var strFunction='add';
