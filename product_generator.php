@@ -17,7 +17,7 @@ echo '<script type="text/javascript" src="scripter.js"></script>';
 echo '<div id="sales-container">';
 echo '<H3>' . base64_decode($row['product_name']) . '</H3>';
 echo '<select id="selOpt">';
-echo '<option value="'.$row['store_id'].'">'.$row['cost'].'</option>';
+echo '<option value="'.$row['shop_id'].'">'.$row['cost'].'</option>';
 echo '</optgroup>';
 echo '</select>';
 echo '<img onclick="fAddItem(\'lulu\');" class="cart" src="images/cart.gif" alt="Add this selection to your basket." />';
