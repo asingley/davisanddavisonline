@@ -31,19 +31,22 @@ Just choose the 2 or 6 Pack option in the drop-down, click the cart, and then se
 <tr>
 						<td>
 							<select id="selOpt">
-<option value="13">Chocolate-Tini: $11.00</option>
-<option value="69">Cosmopolitan: $11.00</option>
-<option value="76">Lemon Drop: $11.00</option>
-<option value="82">Margarita: $11.00</option>
-<option value="143">Mimosa: $11.00</option>
-<option value="142">Peach Bellini: $11.00</option>
-<option value="144">Sangria: $11.00</option>
-<option value="10">Strawberry Margarita: $11.00</option>
-<option value="28">Tango-Tini: $11.00</option>
-<option value="112">Wine Magic: $11.00</option>
-<optgroup label="Create a Multi-Pack">
+<?php 
+
+require_once("db_connect.php");
+$sqlOne= "SELECT * FROM products WHERE active=1 AND prod_type='drink'";
+$resultOne = mysql_query($sqlOne);
+
+while ($rowOne = mysql_fetch_array($resultOne))
+{
+	echo '<option value="'.$rowOne['shop_id'].'">'.base64_decode($rowOne['product_name']).': $'.$rowOne['cost'].'</option>';
+}
+
+/*<optgroup label="Create a Multi-Pack">
 <option value="118">2 Pack: $20.00</option>
-<option value="27">6 Pack: $50.00</option>
+<option value="27">6 Pack: $50.00</option>*/
+require_once("db_close.php");
+?>
 								</optgroup>
 </select>
 </td>
