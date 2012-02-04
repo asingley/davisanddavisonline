@@ -17,6 +17,8 @@ $row = mysql_fetch_array($result);
 echo '<div id="sales-container">';
 echo '<H3>' . base64_decode($row['product_name']) . '</H3>';
 echo '$' . $row['cost'];
+echo '<option value="131">3 Pack: $20.00</option>';
+echo '<img onclick="fAddItem('.$row['prod_type'].');" class="cart" src="images/cart.gif" alt="Add this selection to your basket." />';
 echo '</div>';
 echo '<div class="purpBar">';
 echo '<img src="images/purplefadebar.jpg" alt="Davis And Davis" />';
