@@ -8,7 +8,7 @@
         <div>&nbsp;</div>
         
         <div style="text-align:center;">
-        <form action="partyRequestSubmit.php" method="get">
+        <form action="public_html/partyRequestSubmit.php" method="get">
         	<p style="text-decoration:underline;">Would you like to receive information on any of the following?</p>
             <table border="0" cellspacing="0" cellpadding="4" style="text-align:left;margin:auto;">
                 <tr>
@@ -50,7 +50,3 @@
         </form>
         </div>
 		
-		<!--BAR-->
-		<div class="purpBar">
-			<img src="images/purplefadebar.jpg" alt="" />
-		</div>
