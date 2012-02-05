@@ -82,7 +82,7 @@ else {
 				require_once("public_html/hparty.php");
 			}
 			elseif ($proid == 'partyrequest'){
-				require_once("public_html/hparty.php");
+				require_once("public_html/partyrequest.php");
 			}
 			elseif ($proid == 'partyconsultant'){
 				require_once("public_html/hparty.php");
