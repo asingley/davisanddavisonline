@@ -81,6 +81,12 @@ else {
 			elseif ($proid == 'hparty'){
 				require_once("public_html/hparty.php");
 			}
+			elseif ($proid == 'partyrequest'){
+				require_once("public_html/hparty.php");
+			}
+			elseif ($proid == 'partyconsultant'){
+				require_once("public_html/hparty.php");
+			}
 			else{
 				require_once("group_generator.php");
 			}

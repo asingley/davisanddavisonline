@@ -1,4 +1,4 @@
-<div><a href="../index.php?proid=partyrequest">More Information</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="../index.php?proid=partyConsultant">Consultant Area</a></div>
+<div><a href="../index.php?proid=partyrequest">More Information</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="../index.php?proid=partyconsultant">Consultant Area</a></div>
 		<div id="prodTitle">
 				<div>HOME PARTY</div>
 		</div>
