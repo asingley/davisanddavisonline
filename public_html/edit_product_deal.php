@@ -33,7 +33,7 @@ $resultOne = mysql_query($sqlOne);
 
 while ($rowOne = mysql_fetch_array($resultOne))
 {
-if ($rowOne[id] == $row[prod_type]){
+if ($rowOne[id] == $row[prod_id]){
 		echo '<input type="radio" name="group1" value="'.$rowOne[id].'" checked>'.base64_decode($rowOne[product_name]).'<br>';
 	}
 	else {
