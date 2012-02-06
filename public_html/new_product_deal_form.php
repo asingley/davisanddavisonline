@@ -13,11 +13,12 @@ Product ID Number(From ShopSite): <input type="text" name="shop_id"/></br>
 require_once("db_connect.php");
 $sql= "SELECT * FROM products WHERE active=1";
 $result = mysql_query($sql);
-
+echo '<div style="width:50%;height:100px;overflow:auto;">';
 while ($row = mysql_fetch_array($result))
 {
 	echo '<input type="radio" name="group1" value="'.$row[id].'" >'.base64_decode($row[product_name]).'<br>';
 }
+echo '</div>';
 require_once("db_close.php");
 ?>
 
