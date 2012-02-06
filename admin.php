@@ -228,7 +228,7 @@ while($row = mysql_fetch_row($result)) {
 			
 			$sqlProd= "SELECT product_name FROM products WHERE id=$row[$column_num]";
 			$resultProd = mysql_query($sqlProd);
-			
+			$rowProd = mysql_fetch_array($resultProd);
 			echo "<TD>" . base64_decode($rowProd['product_name']) . "&nbsp;</TD>\n";
 		}
 	}
