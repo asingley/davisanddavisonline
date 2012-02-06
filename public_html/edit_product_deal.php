@@ -28,6 +28,7 @@ Product ID Number(From ShopSite): <input type="text" name="shop_id" value="<?php
 <?php 
 echo '<input type="hidden" name="proid" value="'.$proid.'">';
 
+echo '<div style="width:50%;height:100px;overflow:auto;">';
 $sqlOne= "SELECT * FROM products WHERE active=1";
 $resultOne = mysql_query($sqlOne);
 
@@ -40,7 +41,7 @@ if ($rowOne[id] == $row[prod_id]){
 		echo '<input type="radio" name="group1" value="'.$rowOne[id].'" >'.base64_decode($rowOne[product_name]).'<br>';
 	}
 }
-
+echo '</div>';
 ?>
 <hr>
 
