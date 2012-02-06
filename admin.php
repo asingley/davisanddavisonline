@@ -150,7 +150,7 @@ echo '<div class="tabbertab">';
 echo '<H2>Group Deals</H2>';
 echo '<a href="public_html/new_group_deal_form.php">Add a new Group Deal</a>';
 
-$sql= "SELECT id, deal_name, active FROM group_deals";
+$sql= "SELECT id, deal_name, prod_type, active FROM group_deals";
 $result = mysql_query($sql);
 
 
@@ -195,7 +195,7 @@ echo '<div class="tabbertab">';
 echo '<H2>Product Deals</H2>';
 echo '<a href="public_html/new_product_deal_form.php">Add a new Product Deal</a>';
 
-$sql= "SELECT id, deal_name, active FROM product_deal";
+$sql= "SELECT id, deal_name, prod_id, active FROM product_deal";
 $result = mysql_query($sql);
 
 
@@ -223,6 +223,13 @@ while($row = mysql_fetch_row($result)) {
 		}
 		else {
 			echo "<TD>$row[$column_num]&nbsp;</TD>\n";
+		}
+		if ($column_num ==2){
+			
+			$sqlProd= "SELECT product_name FROM product_deal WHERE id=$row[$column_num]";
+			$resultProd = mysql_query($sqlProd);
+			
+			echo "<TD>" . base64_decode($rowProd['product_name']) . "&nbsp;</TD>\n";
 		}
 	}
 
