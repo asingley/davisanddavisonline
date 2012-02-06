@@ -33,11 +33,11 @@ $resultOne = mysql_query($sqlOne);
 
 while ($rowOne = mysql_fetch_array($resultOne))
 {
-if ($rowOne[short_name] == $row[prod_type]){
-		echo '<input type="radio" name="group1" value="'.$rowOne[short_name].'" checked>'.base64_decode($rowOne[group_name]).'<br>';
+if ($rowOne[id] == $row[prod_type]){
+		echo '<input type="radio" name="group1" value="'.$rowOne[id].'" checked>'.base64_decode($rowOne[product_name]).'<br>';
 	}
 	else {
-		echo '<input type="radio" name="group1" value="'.$rowOne[short_name].'" >'.base64_decode($rowOne[group_name]).'<br>';
+		echo '<input type="radio" name="group1" value="'.$rowOne[id].'" >'.base64_decode($rowOne[product_name]).'<br>';
 	}
 }
 
