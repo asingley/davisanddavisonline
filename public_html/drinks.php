@@ -49,6 +49,14 @@ while ($rowOne = mysql_fetch_array($resultOne))
 	echo '<option value="'.$rowOne['shop_id'].'">'.base64_decode($rowOne['product_name']).': $'.$rowOne['cost'].'</option>';
 }
 
+$sqlOne= "SELECT * FROM group_deals WHERE active=1 AND prod_type='drink'";
+$resultOne = mysql_query($sqlOne);
+
+while ($rowOne = mysql_fetch_array($resultOne))
+{
+	echo '<option value="'.$rowOne['shop_id'].'">'.base64_decode($rowOne['deal_name']).'</option>';
+}
+
 //<optgroup label="Create a Multi-Pack">
 
 mysql_close($con);
