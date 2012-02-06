@@ -13,7 +13,7 @@ if (!$con)
 
 mysql_select_db("davisanddavis", $con);
 
-$sql="UPDATE group_deals SET shop_id='$POST[shop_id]', deal_name='$name', prod_type='$_POST[group1]', active='$_POST[group2]' WHERE id='$_POST[proid]'";
+$sql="UPDATE product_deal SET shop_id='$POST[shop_id]', deal_name='$name', prod_id='$POST[group1]', active='$_POST[group2]' WHERE id='$_POST[proid]'";
 
 
 
