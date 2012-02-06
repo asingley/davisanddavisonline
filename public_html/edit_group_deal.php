@@ -40,6 +40,8 @@ while ($rowOne = mysql_fetch_array($resultOne))
 	}
 	}
 ?>
+<hr>
+
 <?php 
 if ($row['active'] == 1){
 	echo '<input type="radio" name="group2" value="1" checked> Active(available for sale)<br>';
