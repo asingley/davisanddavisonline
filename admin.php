@@ -221,16 +221,17 @@ while($row = mysql_fetch_row($result)) {
 		if ($column_num ==1){
 			echo "<TD>" . base64_decode($row[$column_num]) . "&nbsp;</TD>\n";
 		}
-		else {
-			echo "<TD>$row[$column_num]&nbsp;</TD>\n";
-		}
-		if ($column_num ==2){
-			
+		elseif ($column_num ==2){
+				
 			$sqlProd= "SELECT product_name FROM products WHERE id=$row[$column_num]";
 			$resultProd = mysql_query($sqlProd);
 			$rowProd = mysql_fetch_array($resultProd);
 			echo "<TD>" . base64_decode($rowProd['product_name']) . "&nbsp;</TD>\n";
 		}
+		else {
+			echo "<TD>$row[$column_num]&nbsp;</TD>\n";
+		}
+		
 	}
 
 	echo '<TD><a href="public_html/edit_product_deal.php?proid='. $row[0] .'">edit</a></TD>';
