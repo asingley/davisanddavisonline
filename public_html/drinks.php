@@ -66,7 +66,8 @@ mysql_close($con);
 </select>
 </td>
 <td>
-							<img onclick="fAddItem('drink')" class="cart" src="images/cart.gif" alt="Add this selection to your basket." />
+						<!-- 	<img onclick="fAddItem('drink')" class="cart" src="images/cart.gif" alt="Add this selection to your basket." />
+-->
 </td>
 </tr>
 </table>

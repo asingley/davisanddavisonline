@@ -28,7 +28,7 @@ while ($rowGroup = mysql_fetch_array($resultGroup))
 
 echo '</optgroup>';
 echo '</select><br>';
-echo '<img onclick="fAddItem(\''.$proid.'\');" class="cart" src="images/cart.gif" alt="Add this selection to your basket." />';
+//echo '<img onclick="fAddItem(\''.$proid.'\');" class="cart" src="images/cart.gif" alt="Add this selection to your basket." />';
 
 echo '</center>';
 ?>

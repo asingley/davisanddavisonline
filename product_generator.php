@@ -31,7 +31,7 @@ while ($rowOne = mysql_fetch_array($resultOne))
 
 echo '</optgroup>';
 echo '</select><br>';
-echo '<img onclick="fAddItem(\''.$row['prod_type'].'\');" class="cart" src="images/cart.gif" alt="Add this selection to your basket." />';
+//echo '<img onclick="fAddItem(\''.$row['prod_type'].'\');" class="cart" src="images/cart.gif" alt="Add this selection to your basket." />';
 echo '</div>';
 echo '<div class="purpBar">';
 echo '<img src="images/purplefadebar.jpg" alt="Davis And Davis" />';
