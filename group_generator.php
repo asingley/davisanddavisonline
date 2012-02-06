@@ -16,7 +16,7 @@ echo '<center><H2>' . base64_decode($row['group_name']) . '</H2>';
 
 echo '<select id="selOpt">';
 
-$sqlGroup= "SELECT * FROM group_deals WHERE active=1 AND prod_type=$proid";
+$sqlGroup= "SELECT * FROM group_deals WHERE active=1 AND prod_type='$proid'";
 $resultGroup = mysql_query($sqlGroup);
 
 while ($rowGroup = mysql_fetch_array($resultGroup))
