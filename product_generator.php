@@ -18,6 +18,17 @@ echo '<div id="sales-container">';
 echo '<H3>' . base64_decode($row['product_name']) . '</H3>';
 echo '<select id="selOpt">';
 echo '<option value="'.$row['shop_id'].'">'.$row['cost'].'</option>';
+
+$sqlOne= "SELECT * FROM product_deal WHERE active=1 AND prod_id=$proid";
+$resultOne = mysql_query($sqlOne);
+
+while ($rowOne = mysql_fetch_array($resultOne))
+{
+	echo '<option value="'.$rowOne['shop_id'].'">'.base64_decode($rowOne['deal_name']).'</option>';
+}
+
+
+
 echo '</optgroup>';
 echo '</select><br>';
 echo '<img onclick="fAddItem(\''.$row['prod_type'].'\');" class="cart" src="images/cart.gif" alt="Add this selection to your basket." />';
