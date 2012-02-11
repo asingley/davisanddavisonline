@@ -65,7 +65,7 @@ Product Description:<br>
 <br>
 
 
-Product Recipe:<br><textarea cols="50" rows="4" name="prod_recip" ><?php echo $row['recipe'];?></textarea><br>
+
 Price Per Unit: <input type="text" name="prod_price" value="<?php echo $row['cost'];?>"/><br>
 <br>
 <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />

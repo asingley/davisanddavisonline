@@ -40,7 +40,7 @@ Product Description:<br>
 
 
 <br>
-Product Recipe:<br><textarea cols="50" rows="4" name="prod_recip" ></textarea><br>
+
 
 Price Per Unit: <input type="text" name="prod_price"/><br>
 <br>
