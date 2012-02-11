@@ -44,7 +44,7 @@ body {
 	cursor:pointer;
 }
 #menu {
-	float:left;
+	float:center;
 	margin: 4px 5px 10px 0px;
 	width: 760px;
 	height:40px;
